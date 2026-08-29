@@ -25,7 +25,10 @@ def load_cache():
         try:
             with open(BUNDLE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                CACHE.update(data)
+                CACHE["recent_hits"] = list(data.get("recent_hits", []))
+                CACHE["total_hits"] = data.get("total_hits", len(CACHE["recent_hits"]))
+                CACHE["total_accs"] = data.get("total_accs", CACHE["total_hits"])
+                CACHE["total_scans"] = data.get("total_scans", 1)
         except Exception:
             pass
 
@@ -37,7 +40,7 @@ def load_cache():
                 if "recent_hits" in tmp_data and isinstance(tmp_data["recent_hits"], list):
                     for th in tmp_data["recent_hits"]:
                         if not any(x.get("email") == th.get("email") for x in CACHE["recent_hits"]):
-                            CACHE["recent_hits"].insert(0, th)
+                            CACHE["recent_hits"].append(th)
                 if "total_hits" in tmp_data and tmp_data["total_hits"] > CACHE.get("total_hits", 0):
                     CACHE["total_hits"] = tmp_data["total_hits"]
                 if "total_accs" in tmp_data:
@@ -45,6 +48,11 @@ def load_cache():
         except Exception:
             pass
 
+    # Her zaman tarihe göre azalan sırala (en yeni en üstte)
+    CACHE["recent_hits"].sort(
+        key=lambda x: str(x.get("created_at") or x.get("checked_at") or ""),
+        reverse=True
+    )
     CACHE["total_hits"] = max(CACHE.get("total_hits", 0), len(CACHE["recent_hits"]))
 
 def save_cache():
@@ -167,8 +175,12 @@ class handler(BaseHTTPRequestHandler):
                             "created_at": h.get("checked_at", h.get("created_at", time.strftime("%Y-%m-%d %H:%M:%S")))
                         }
                         if not any(x.get("email") == new_item["email"] for x in CACHE["recent_hits"]):
-                            CACHE["recent_hits"].insert(0, new_item)
+                            CACHE["recent_hits"].append(new_item)
 
+                    CACHE["recent_hits"].sort(
+                        key=lambda x: str(x.get("created_at") or x.get("checked_at") or ""),
+                        reverse=True
+                    )
                     CACHE["total_hits"] = max(CACHE.get("total_hits", 0), len(CACHE["recent_hits"]))
 
                 # İstatistik güncelleme
