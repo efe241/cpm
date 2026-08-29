@@ -85,35 +85,18 @@ async def execute_batch_scan(
 
     start_time = time.time()
     semaphore = asyncio.Semaphore(MAX_CONCURRENT_TASKS)
-    last_update_time = [0.0]
+    stop_progress = asyncio.Event()
 
-    async def worker(acc: Tuple[str, str]):
-        nonlocal processed_count
-        e, p = acc
-        async with semaphore:
+    # Arka planda Discord Rate Limit'e takılmadan düzenli güncelleyen bağımsız döngü
+    async def progress_tracker():
+        while not stop_progress.is_set():
             try:
-                success, details, err_msg = await asyncio.wait_for(
-                    check_cpm_account(session, e, p),
-                    timeout=16.0
-                )
-            except asyncio.TimeoutError:
-                success, details, err_msg = False, None, "Zaman Aşımı (Timeout)"
-            except Exception as e_err:
-                success, details, err_msg = False, None, str(e_err)
-
-            processed_count += 1
-            if success and details:
-                valid_list.append(details)
-            else:
-                invalid_list.append((e, p, err_msg or "Bilinmeyen Hata"))
-
-            # Discord mesajını her 1.8 saniyede bir canlı güncelle
-            now = time.time()
-            if (now - last_update_time[0] >= 1.8 or processed_count == total) and progress_edit_fn:
-                last_update_time[0] = now
+                await asyncio.sleep(2.0)
+                if stop_progress.is_set():
+                    break
                 pct = int((processed_count / total) * 100) if total > 0 else 0
                 bar = render_progress_bar(processed_count, total, length=12)
-                elapsed_cur = round(now - start_time, 1)
+                elapsed_cur = round(time.time() - start_time, 1)
 
                 prog_embed = discord.Embed(
                     title="⚡ Toplu Hesap Kontrolü Canlı Taranıyor...",
@@ -132,15 +115,39 @@ async def execute_batch_scan(
                 prog_embed.add_field(name="🌐 Proxy Havuzu", value=f"`{proxy_mgr.count()} aktif`", inline=True)
                 prog_embed.set_footer(text=f"Kullanıcı: {username} • CPM Turbo Motor")
 
-                try:
+                if progress_edit_fn:
                     await progress_edit_fn(prog_embed)
-                except Exception:
-                    pass
+            except Exception:
+                pass
+
+    async def worker(acc: Tuple[str, str]):
+        nonlocal processed_count
+        e, p = acc
+        async with semaphore:
+            try:
+                success, details, err_msg = await asyncio.wait_for(
+                    check_cpm_account(session, e, p),
+                    timeout=14.0
+                )
+            except asyncio.TimeoutError:
+                success, details, err_msg = False, None, "Zaman Aşımı (Timeout)"
+            except Exception as e_err:
+                success, details, err_msg = False, None, str(e_err)
+
+            processed_count += 1
+            if success and details:
+                valid_list.append(details)
+            else:
+                invalid_list.append((e, p, err_msg or "Bilinmeyen Hata"))
+
+    tracker_task = asyncio.create_task(progress_tracker())
 
     try:
         tasks = [worker(acc) for acc in accounts]
         await asyncio.gather(*tasks)
     finally:
+        stop_progress.set()
+        tracker_task.cancel()
         if close_session:
             await session.close()
 
