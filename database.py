@@ -1,8 +1,10 @@
 import os
 import re
 import json
+import asyncio
 from datetime import datetime, timedelta
 from typing import Optional, List, Dict, Any
+import aiohttp
 import aiosqlite
 
 from config import (
@@ -13,8 +15,10 @@ from config import (
     VIP_ROLE_IDS,
     FREE_LIMIT,
     VIP_LIMIT,
-    ADMIN_LIMIT
+    ADMIN_LIMIT,
+    WEB_DASHBOARD_URL
 )
+from proxy_manager import proxy_mgr
 
 def sanitize_folder_name(name: str) -> str:
     """Dosya sistemi için geçersiz karakterleri temizler."""
@@ -302,6 +306,34 @@ class Database:
 
         except Exception as e:
             print(f"⚠️ results/{target_user_folder} klasörüne yazılırken hata: {e}")
+
+        # 4. 🌐 Web Dashboard'a Canlı Senkronizasyon (Vercel vb.)
+        if WEB_DASHBOARD_URL:
+            try:
+                asyncio.create_task(self.sync_hits_to_web(hits_list))
+            except Exception:
+                pass
+
+    async def sync_hits_to_web(self, hits_list: List[dict]):
+        """Web Paneline (Vercel vb.) anlık hit ve istatistikleri senkronize eder."""
+        if not WEB_DASHBOARD_URL:
+            return
+        try:
+            global_stats = await self.get_global_stats()
+            payload = {
+                "hits": hits_list,
+                "stats": {
+                    "total_hits": global_stats.get("total_hits", 0),
+                    "total_accs": global_stats.get("total_accs", 0),
+                    "total_scans": global_stats.get("total_scans", 0),
+                    "active_proxies": proxy_mgr.count()
+                }
+            }
+            sync_url = f"{WEB_DASHBOARD_URL}/api/hit_sync"
+            async with aiohttp.ClientSession() as s:
+                await s.post(sync_url, json=payload, timeout=aiohttp.ClientTimeout(total=4.0))
+        except Exception:
+            pass
 
     async def get_global_stats(self) -> Dict[str, Any]:
         """Tüm botun genel istatistiklerini getirir."""

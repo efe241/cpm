@@ -28,10 +28,11 @@ ADMIN_USER_IDS = [int(x.strip()) for x in raw_admins.split(",") if x.strip().isd
 raw_vip_roles = os.getenv("VIP_ROLE_IDS", "")
 VIP_ROLE_IDS = [int(x.strip()) for x in raw_vip_roles.split(",") if x.strip().isdigit()]
 
-# 🌐 Proxy & Apify API Ayarları
+# 🌐 Proxy & Apify & Web Dashboard API Ayarları
 APIFY_PROXY_URL = os.getenv("APIFY_PROXY_URL", "")
 APIFY_API_TOKEN = os.getenv("APIFY_API_TOKEN", "")
 PROXY_API_URL = os.getenv("PROXY_API_URL", "")
+WEB_DASHBOARD_URL = os.getenv("WEB_DASHBOARD_URL", "").rstrip("/")
 PROXY_TEST_TIMEOUT = float(os.getenv("PROXY_TEST_TIMEOUT", 2.5))
 PROXY_TEST_URL = os.getenv("PROXY_TEST_URL", "https://httpbin.org/ip")
 

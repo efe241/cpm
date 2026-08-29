@@ -8,3 +8,6 @@ env/
 venv/
 *.zip
 .system_generated/
+
+.vercel
+.env*
