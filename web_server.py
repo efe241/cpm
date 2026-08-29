@@ -34,9 +34,10 @@ async def handle_health(request):
     })
 
 @routes.get("/api/stats")
+@routes.get("/api/all_hits")
 async def handle_api_stats(request):
     global_stats = await db.get_global_stats()
-    recent_hits = await db.get_recent_hits(limit=15)
+    all_hits = await db.get_recent_hits(limit=100)
     
     return web.json_response({
         "status": "success",
@@ -46,8 +47,18 @@ async def handle_api_stats(request):
         "total_vips": global_stats.get("total_vips", 0),
         "total_admins": global_stats.get("total_admins", 0),
         "active_proxies": proxy_mgr.count(),
-        "recent_hits": recent_hits
+        "recent_hits": all_hits
     })
+
+@routes.get("/api/export/txt")
+async def handle_export_txt(request):
+    all_hits = await db.get_recent_hits(limit=500)
+    lines = [f"{h.get('email')}:{h.get('password', '123456')}" for h in all_hits]
+    return web.Response(
+        text="\n".join(lines),
+        content_type="text/plain",
+        headers={"Content-Disposition": 'attachment; filename="cpm_tum_hitler.txt"'}
+    )
 
 def create_web_app() -> web.Application:
     app = web.Application()
