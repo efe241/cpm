@@ -6,10 +6,10 @@ from proxy_manager import proxy_mgr
 from config import BASE_DIR
 
 START_TIME = time.time()
-
 routes = web.RouteTableDef()
 
 @routes.get("/")
+@routes.get("/index.html")
 async def handle_dashboard(request):
     html_path = os.path.join(BASE_DIR, "templates", "dashboard.html")
     if os.path.exists(html_path):
@@ -18,11 +18,12 @@ async def handle_dashboard(request):
                 content = f.read()
             return web.Response(text=content, content_type="text/html")
         except Exception as e:
-            return web.Response(text=f"<h1>Dashboard yüklenemedi: {e}</h1>", content_type="text/html")
+            return web.Response(text=f"<h1>Dashboard Yüklenemedi: {e}</h1>", content_type="text/html")
     return web.Response(text="<h1>Dashboard Şablonu Bulunamadı!</h1>", content_type="text/html")
 
 @routes.get("/health")
 @routes.get("/ping")
+@routes.get("/api/health")
 async def handle_health(request):
     uptime_sec = round(time.time() - START_TIME, 1)
     return web.json_response({
@@ -52,7 +53,7 @@ async def handle_api_stats(request):
 
 @routes.get("/api/export/txt")
 async def handle_export_txt(request):
-    all_hits = await db.get_recent_hits(limit=500)
+    all_hits = await db.get_recent_hits(limit=1000)
     lines = [f"{h.get('email')}:{h.get('password', '123456')}" for h in all_hits]
     return web.Response(
         text="\n".join(lines),

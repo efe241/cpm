@@ -1,66 +1,61 @@
 import discord
 from discord import app_commands
 from discord.ext import commands
+from datetime import datetime
 
-from config import FREE_LIMIT, VIP_LIMIT
-
-class GeneralCog(commands.Cog, name="General"):
+class GeneralCog(commands.Cog, name="Genel Komutlar"):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
-    def create_help_embed(self) -> discord.Embed:
-        embed = discord.Embed(
-            title="🚗 Car Parking Multiplayer Bot - Komut Kılavuzu",
-            description="Botu hem **Sunucularda** hem de **Özel Mesajda (DM)** butonlu panellerle ve `!` komutlarıyla kolayca kullanabilirsiniz.",
-            color=discord.Color.blue()
-        )
+    @app_commands.command(name="yardim", description="CPM Checker Bot yardım ve komut rehberini gösterir.")
+    async def cmd_yardim_slash(self, interaction: discord.Interaction):
+        embed = self.create_help_embed(interaction.user)
+        await interaction.response.send_message(embed=embed, ephemeral=False)
 
+    @commands.command(name="yardim", aliases=["help", "komutlar", "h"])
+    async def cmd_yardim_prefix(self, ctx: commands.Context):
+        embed = self.create_help_embed(ctx.author)
+        await ctx.reply(embed=embed)
+
+    def create_help_embed(self, user) -> discord.Embed:
+        embed = discord.Embed(
+            title="🚗 Car Parking Multiplayer & Firebase Checker Bot",
+            description="Aşağıda botun tüm komutları ve interaktif panelleri listelenmiştir:",
+            color=discord.Color.blue(),
+            timestamp=datetime.now()
+        )
         embed.add_field(
             name="🚗 `!checkpanel` veya `/checkpanel` (Ana Hesap Kontrol Paneli)",
-            value="• Tek tuşla form açıp tekli hesap kontrolü yapın.\n"
-                  "• Çoklu hesapları metin kutusuna yapıştırıp hızlı tarayın.\n"
-                  "• İstatistiklerinizi ve son bulduğunuz hitleri görün.\n"
-                  "• Sonuçlar adınıza özel `results/<isminiz>/` klasörüne kaydedilir.",
+            value="İnteraktif modal butonlarıyla tekli ve toplu hesap kontrolü yapmanızı sağlar.",
             inline=False
         )
-
         embed.add_field(
-            name="🌐 `!proxypanel` veya `/proxypanel` (Yetkili Proxy Paneli)",
-            value="• 25+ küresel kaynaktan tek tıkla canlı proxy çekip test edin.\n"
-                  "• Havuzdaki ölü proxyleri temizleyin.\n"
-                  "• Özel API / linkten anlık proxy yükleyin.",
+            name="🌍 `!proxypanel` veya `/proxypanel` (Proxy Yönetim Paneli)",
+            value="25+ Küresel kaynaktan otomatik proxy çeker, paralel hız testi yapar ve havuzu yönetir.",
             inline=False
         )
-
         embed.add_field(
-            name="📁 Hızlı Doğrudan Komutlar",
-            value="• `!check email:şifre` : Tekli hızlı kontrol.\n"
-                  "• `!toplu` *(Dosya Ekleyerek)* : TXT dosyası ile turbo tarama.\n"
-                  "• `!quick` : Mesaja alt alta yapıştırarak kontrol.\n"
-                  "• `!istatistik` : Genel ve kişisel tarama verileri.",
+            name="⚡ `!check email:şifre` veya `/check`",
+            value="Tek bir CPM hesabının tüm garaj araçlarını, açık araçlarını ve seviyesini doğrular.",
             inline=False
         )
-
         embed.add_field(
-            name="👑 Yetki & VIP Yönetimi",
-            value="• `!yetkili_ekle @kullanici` : Panel ve proxy kontrol yetkisi tanımlar.\n"
-                  "• `!vip_ekle @kullanici [gun]` : 100 CPM limitli VIP tanımlar.",
+            name="📦 `!toplu` veya `/toplu_kontrol`",
+            value="Doğrudan metin yapıştırarak veya `.txt` dosyası yükleyerek toplu tarama yapar.",
             inline=False
         )
-
-        embed.set_footer(text="CPM Bot • DM ve Sunucu Uyumlu")
+        embed.add_field(
+            name="📊 `!stats` veya `/istatistik`",
+            value="Kişisel ve genel tarama başarı istatistiklerini görüntüler.",
+            inline=False
+        )
+        embed.add_field(
+            name="🌐 Canlı Web Dashboard",
+            value="[Web Dashboard Linki](https://tempapims-efes-projects-602609c9.vercel.app)",
+            inline=False
+        )
+        embed.set_footer(text=f"İsteyen: {user.name} • CPM Turbo Engine")
         return embed
-
-    @app_commands.command(name="yardim", description="Bot komutlarını ve kılavuzunu gösterir.")
-    async def cmd_help(self, interaction: discord.Interaction):
-        embed = self.create_help_embed()
-        await interaction.response.send_message(embed=embed, ephemeral=True)
-
-    @commands.command(name="yardim", aliases=["help", "komutlar"])
-    async def prefix_help(self, ctx: commands.Context):
-        """DM ve Sunucuda !yardim komutu"""
-        embed = self.create_help_embed()
-        await ctx.reply(embed=embed)
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(GeneralCog(bot))

@@ -1,289 +1,143 @@
 import os
 import re
-import time
 import random
 import asyncio
-from typing import Optional, List, Tuple, Dict, Any
 import aiohttp
+from typing import List, Optional, Tuple, Dict, Any
 
 from config import (
-    PROXIES_FILE,
-    PROXY_TEST_URL,
+    PROXIES_FILE_PATH,
     PROXY_TEST_TIMEOUT,
-    APIFY_API_TOKEN,
-    PROXY_API_URL,
-    APIFY_PROXY_URL,
-    BUILTIN_PROXY_SOURCES
+    PROXY_TEST_URL,
+    BUILTIN_PROXY_SOURCES,
+    APIFY_PROXY_URL
 )
 
-# IP:PORT yakalayıcı regex deseni
 IP_PORT_REGEX = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}:\d{2,5}\b')
 
 class ProxyManager:
-    """
-    HTTP / HTTPS / SOCKS4 / SOCKS5 Küresel Proxy Yöneticisi.
-    Dünya çapında 25+ farklı kaynaktan proxy çeker,
-    otomatik paralel sağlık/hız testi yapar ve sadece çalışan hızlı proxyleri havuzda tutar.
-    """
-    def __init__(self, proxy_file: str = PROXIES_FILE):
-        self.proxy_file = proxy_file
+    def __init__(self, file_path: str = PROXIES_FILE_PATH):
+        self.file_path = file_path
         self.proxies: List[str] = []
-        self._index: int = 0
-        self.load_proxies()
-
-    def normalize_proxy(self, raw_proxy: str, default_protocol: str = "http") -> Optional[str]:
-        raw_proxy = raw_proxy.strip()
-        if not raw_proxy or raw_proxy.startswith("#"):
-            return None
-
-        if raw_proxy.startswith(("http://", "https://", "socks5://", "socks4://")):
-            return raw_proxy
-
-        parts = raw_proxy.split(":")
-        if len(parts) == 4:
-            ip, port, user, pwd = parts
-            return f"{default_protocol}://{user}:{pwd}@{ip}:{port}"
-        elif len(parts) == 2:
-            ip, port = parts
-            return f"{default_protocol}://{ip}:{port}"
-
-        return f"{default_protocol}://{raw_proxy}"
+        self._lock = asyncio.Lock()
+        self.last_tested_count = 0
 
     def load_proxies(self) -> int:
+        """proxies.txt dosyasından formatlayarak proxy listesini yükler."""
+        if not os.path.exists(self.file_path):
+            self.proxies = []
+            return 0
+
         loaded = []
+        with open(self.file_path, "r", encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                matches = IP_PORT_REGEX.findall(line)
+                if matches:
+                    loaded.append(matches[0])
+                else:
+                    loaded.append(line)
 
-        # 1. config/env içindeki APIFY_PROXY_URL varsa ilk sıraya ekle
-        if APIFY_PROXY_URL:
-            norm = self.normalize_proxy(APIFY_PROXY_URL)
-            if norm:
-                loaded.append(norm)
+        # Tekilleştir
+        seen = set()
+        clean = []
+        for p in loaded:
+            if p not in seen:
+                seen.add(p)
+                clean.append(p)
 
-        # 2. proxies.txt dosyasını oku
-        if os.path.exists(self.proxy_file):
-            try:
-                with open(self.proxy_file, "r", encoding="utf-8", errors="ignore") as f:
-                    for line in f:
-                        p = self.normalize_proxy(line)
-                        if p and p not in loaded:
-                            loaded.append(p)
-            except Exception as e:
-                print(f"⚠️ Proxy dosyası okunurken hata: {e}")
-        else:
-            try:
-                with open(self.proxy_file, "w", encoding="utf-8") as f:
-                    f.write("# Proxylerinizi buraya her satıra bir adet gelecek şekilde yazabilirsiniz:\n")
-                    if APIFY_PROXY_URL:
-                        f.write(f"{APIFY_PROXY_URL}\n")
-            except Exception:
-                pass
-
-        self.proxies = loaded
-        self._index = 0
+        self.proxies = clean
         return len(self.proxies)
 
-    def save_proxies_to_file(self):
-        """Mevcut havuzdaki çalışan proxyleri dosyaya kaydeder."""
-        try:
-            with open(self.proxy_file, "w", encoding="utf-8") as f:
-                f.write("# Aktif Çalışan ve Test Edilmiş Küresel Proxy Listesi\n")
-                for p in self.proxies:
-                    f.write(f"{p}\n")
-        except Exception as e:
-            print(f"⚠️ Proxy dosyasına yazılırken hata: {e}")
-
-    def get_proxy(self) -> Optional[str]:
-        if not self.proxies:
-            return None
-        proxy = self.proxies[self._index % len(self.proxies)]
-        self._index += 1
-        return proxy
+    def save_proxies(self, proxy_list: List[str]):
+        """Proxy listesini dosyaya kaydeder."""
+        with open(self.file_path, "w", encoding="utf-8") as f:
+            for p in proxy_list:
+                f.write(f"{p}\n")
+        self.proxies = list(proxy_list)
 
     def get_random_proxy(self) -> Optional[str]:
+        """Havuzdan rastgele bir proxy döndürür."""
         if not self.proxies:
-            return None
-        return random.choice(self.proxies)
+            return APIFY_PROXY_URL if APIFY_PROXY_URL else None
+        p = random.choice(self.proxies)
+        if not (p.startswith("http://") or p.startswith("https://") or p.startswith("socks5://") or p.startswith("socks4://")):
+            return f"http://{p}"
+        return p
 
     def count(self) -> int:
         return len(self.proxies)
 
-    async def test_single_proxy(
-        self,
-        session: aiohttp.ClientSession,
-        proxy_url: str,
-        test_url: str = PROXY_TEST_URL,
-        timeout: float = PROXY_TEST_TIMEOUT
-    ) -> Tuple[bool, float, Optional[str]]:
-        """Tek bir proxy'nin çalışırlığını ve ping süresini (ms) test eder."""
-        client_timeout = aiohttp.ClientTimeout(total=timeout)
-        start = time.time()
+    async def test_single_proxy(self, session: aiohttp.ClientSession, raw_proxy: str) -> Tuple[bool, str, float]:
+        """Tek bir proxy'yi asenkron pingler."""
+        p_formatted = raw_proxy
+        if not (p_formatted.startswith("http://") or p_formatted.startswith("https://") or p_formatted.startswith("socks4://") or p_formatted.startswith("socks5://")):
+            p_formatted = f"http://{p_formatted}"
+
+        start = asyncio.get_event_loop().time()
         try:
-            async with session.get(test_url, proxy=proxy_url, timeout=client_timeout) as resp:
-                if resp.status in (200, 204):
-                    latency = round((time.time() - start) * 1000, 1)
-                    return True, latency, None
-                return False, 0.0, f"HTTP {resp.status}"
-        except asyncio.TimeoutError:
-            return False, 0.0, "Timeout"
-        except Exception as e:
-            return False, 0.0, str(e)
-
-    async def test_and_filter_proxies(
-        self,
-        session: aiohttp.ClientSession,
-        proxy_list: Optional[List[str]] = None,
-        concurrency: int = 60
-    ) -> Dict[str, Any]:
-        """
-        Verilen veya mevcut havuzdaki proxyleri yüksek eşzamanlılıkla (concurrency=60) paralel test eder.
-        Çalışmayanları eler, çalışanları gecikmeye göre sıralayıp havuza alır.
-        """
-        targets = proxy_list if proxy_list is not None else list(self.proxies)
-        if not targets:
-            return {"total": 0, "working": 0, "failed": 0, "working_list": []}
-
-        total_tested = len(targets)
-        semaphore = asyncio.Semaphore(concurrency)
-        working_results = []
-        failed_count = 0
-
-        async def worker(p):
-            nonlocal failed_count
-            async with semaphore:
-                ok, lat, err = await self.test_single_proxy(session, p)
-                if ok:
-                    working_results.append({"proxy": p, "latency": lat})
-                else:
-                    failed_count += 1
-
-        tasks = [worker(p) for p in targets]
-        await asyncio.gather(*tasks)
-
-        # En hızlıdan yavaşa sırala
-        working_results.sort(key=lambda x: x["latency"])
-        self.proxies = [item["proxy"] for item in working_results]
-        self._index = 0
-        self.save_proxies_to_file()
-
-        return {
-            "total": total_tested,
-            "working": len(working_results),
-            "failed": failed_count,
-            "working_list": working_results
-        }
-
-    async def fetch_from_single_source(
-        self,
-        session: aiohttp.ClientSession,
-        source: dict
-    ) -> List[str]:
-        """Tek bir küresel kaynaktan proxy metnini çeker ve regex ile IP:PORT ayrıştırır."""
-        url = source["url"]
-        proto = source.get("type", "http")
-        proxies_found = []
-        try:
-            async with session.get(url, timeout=aiohttp.ClientTimeout(total=6.0)) as resp:
+            async with session.get(PROXY_TEST_URL, proxy=p_formatted, timeout=aiohttp.ClientTimeout(total=PROXY_TEST_TIMEOUT)) as resp:
                 if resp.status == 200:
-                    text = await resp.text()
-                    # Regex ile metindeki tüm IP:Port kombinasyonlarını yakala
-                    matches = IP_PORT_REGEX.findall(text)
-                    for ip_port in matches:
-                        p = f"{proto}://{ip_port}"
-                        proxies_found.append(p)
+                    dur = round(asyncio.get_event_loop().time() - start, 2)
+                    return True, raw_proxy, dur
         except Exception:
             pass
-        return proxies_found
+        return False, raw_proxy, 0.0
 
-    async def fetch_and_auto_test(
-        self,
-        session: aiohttp.ClientSession,
-        max_test: int = 500,
-        concurrency: int = 60
-    ) -> Dict[str, Any]:
-        """
-        🌍 25+ farklı küresel internet kaynağından proxy çeker,
-        hepsini paralel olarak test eder ve sadece çalışanları havuza ekler.
-        """
-        # 1. 25+ küresel kaynaktan paralel çekim
-        tasks = [self.fetch_from_single_source(session, s) for s in BUILTIN_PROXY_SOURCES]
-        if PROXY_API_URL:
-            tasks.append(self.fetch_from_single_source(session, {"url": PROXY_API_URL, "type": "http"}))
+    async def test_and_filter_proxies(self, proxy_list: List[str], max_concurrency: int = 60) -> List[str]:
+        """Verilen proxy listesini paralel test eder ve sadece çalışanları döndürür."""
+        if not proxy_list:
+            return []
 
-        results = await asyncio.gather(*tasks)
+        working_proxies = []
+        semaphore = asyncio.Semaphore(max_concurrency)
 
-        raw_all = []
-        if APIFY_PROXY_URL:
-            raw_all.append(self.normalize_proxy(APIFY_PROXY_URL))
+        async with aiohttp.ClientSession() as session:
+            async def bounded_test(p):
+                async with semaphore:
+                    ok, prx, _ = await self.test_single_proxy(session, p)
+                    if ok:
+                        working_proxies.append(prx)
 
-        for r in results:
-            raw_all.extend(r)
+            tasks = [bounded_test(p) for p in proxy_list]
+            await asyncio.gather(*tasks)
 
-        # Tekilleştirme (Deduplication)
-        unique_proxies = []
-        seen = set()
-        for p in raw_all:
-            if p and p not in seen:
-                seen.add(p)
-                unique_proxies.append(p)
+        self.save_proxies(working_proxies)
+        return working_proxies
 
-        total_fetched = len(raw_all)
-        total_unique = len(unique_proxies)
+    async def fetch_and_auto_test(self, custom_urls: Optional[List[str]] = None) -> Tuple[int, int]:
+        """25+ küresel kaynaktan proxy çeker ve hızlıca test edip havuzu yeniler."""
+        sources = list(BUILTIN_PROXY_SOURCES)
+        if custom_urls:
+            for u in custom_urls:
+                sources.append({"name": "Özel Kaynak", "url": u, "type": "auto"})
 
-        to_test = unique_proxies[:max_test]
+        raw_found = []
+        async with aiohttp.ClientSession() as session:
+            async def fetch_source(src):
+                try:
+                    async with session.get(src["url"], timeout=aiohttp.ClientTimeout(total=5.0)) as resp:
+                        if resp.status == 200:
+                            text = await resp.text()
+                            matches = IP_PORT_REGEX.findall(text)
+                            return matches
+                except Exception:
+                    pass
+                return []
 
-        # 2. Hızlı Paralel Test
-        test_summary = await self.test_and_filter_proxies(session, proxy_list=to_test, concurrency=concurrency)
+            results = await asyncio.gather(*[fetch_source(s) for s in sources])
+            for r in results:
+                raw_found.extend(r)
 
-        return {
-            "sources_count": len(BUILTIN_PROXY_SOURCES),
-            "total_fetched": total_fetched,
-            "unique_fetched": total_unique,
-            "tested": len(to_test),
-            "working": test_summary["working"],
-            "failed": test_summary["failed"],
-            "working_list": test_summary["working_list"]
-        }
+        unique_raw = list(set(raw_found))
+        if not unique_raw:
+            return 0, 0
 
-    async def fetch_from_api(self, session: aiohttp.ClientSession, api_url: str) -> int:
-        """Harici API'den çeker."""
-        try:
-            async with session.get(api_url, timeout=aiohttp.ClientTimeout(total=10.0)) as resp:
-                if resp.status == 200:
-                    text = await resp.text()
-                    matches = IP_PORT_REGEX.findall(text)
-                    added = 0
-                    for ip_port in matches:
-                        p = f"http://{ip_port}"
-                        if p not in self.proxies:
-                            self.proxies.append(p)
-                            added += 1
-                    if added > 0:
-                        self.save_proxies_to_file()
-                    return added
-        except Exception as e:
-            print(f"⚠️ Proxy API'den çekilirken hata: {e}")
-        return 0
+        # En hızlı 200 adedini test et
+        sample = random.sample(unique_raw, min(200, len(unique_raw)))
+        working = await self.test_and_filter_proxies(sample, max_concurrency=60)
+        return len(unique_raw), len(working)
 
-    async def fetch_from_apify(
-        self,
-        session: aiohttp.ClientSession,
-        apify_token: Optional[str] = None
-    ) -> int:
-        token = apify_token or APIFY_API_TOKEN
-        if not token:
-            return 0
-
-        apify_residential = f"http://groups-RESIDENTIAL:{token}@proxy.apify.com:8000"
-        apify_datacenter = f"http://auto:{token}@proxy.apify.com:8000"
-
-        added = 0
-        for p in [apify_residential, apify_datacenter]:
-            if p not in self.proxies:
-                self.proxies.append(p)
-                added += 1
-
-        if added > 0:
-            self.save_proxies_to_file()
-        return added
-
-# Global proxy manager nesnesi
 proxy_mgr = ProxyManager()

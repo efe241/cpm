@@ -20,7 +20,6 @@ from database import db
 from proxy_manager import proxy_mgr
 from web_server import create_web_app
 
-# Bot Tanımlamaları
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -94,7 +93,7 @@ async def on_ready():
         print(f"❌ Slash komutları senkronize edilirken hata: {e}")
 
     await bot.change_presence(
-        activity=discord.Game(name="/yardim | CPM Checker 🚗")
+        activity=discord.Game(name="/yardim | !checkpanel 🚗")
     )
 
 if __name__ == "__main__":

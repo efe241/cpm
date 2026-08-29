@@ -14,7 +14,7 @@ CACHE = {
     "total_scans": 0,
     "total_vips": 1,
     "total_admins": 1,
-    "active_proxies": 25,
+    "active_proxies": 21,
     "recent_hits": []
 }
 
@@ -92,7 +92,7 @@ class handler(BaseHTTPRequestHandler):
             data = {
                 "status": "healthy",
                 "service": "CPM Vercel Web Dashboard & API",
-                "active_proxies": CACHE.get("active_proxies", 25),
+                "active_proxies": CACHE.get("active_proxies", 21),
                 "total_hits": CACHE.get("total_hits", len(CACHE["recent_hits"])),
                 "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
             }
@@ -197,5 +197,4 @@ class handler(BaseHTTPRequestHandler):
                 return
         else:
             self.send_response(404)
-            self.send_header("Content-type", "application/json")
             self.end_headers()

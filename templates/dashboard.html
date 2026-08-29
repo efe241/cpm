@@ -182,9 +182,9 @@
                     <div class="flex items-center justify-between mb-4">
                         <div>
                             <h2 class="text-sm font-bold text-white flex items-center gap-2">
-                                <i class="fa-solid fa-bolt text-amber-400"></i> Son Bulunan Canlı Hitler
+                                <i class="fa-solid fa-bolt text-amber-400"></i> En Dolu Canlı Hitler
                             </h2>
-                            <p class="text-xs text-slate-400 mt-0.5">En son doğrulanan hesaplar</p>
+                            <p class="text-xs text-slate-400 mt-0.5">En yüksek araç sayısına göre sıralanmış hesaplar</p>
                         </div>
                         <button onclick="switchTab('tab-hits')" class="text-xs text-blue-400 hover:text-blue-300 font-medium">Tümünü Gör →</button>
                     </div>
@@ -280,7 +280,7 @@
         CPM Checker & Discord Bot • 7/24 Cloud Monitoring Dashboard
     </footer>
 
-    <!-- Client-side Logic & Dynamic Refresh -->
+    <!-- Client-side Logic -->
     <script>
         let allHitsData = [];
         let ratioChartInstance = null;
@@ -428,7 +428,7 @@
 
                 allHitsData = data.recent_hits || [];
 
-                // Veriyi en dolu hesaplara (araç sayısı en yüksek olanlara) göre sırala
+                // Veriyi en dolu araçlara göre sırala
                 allHitsData.sort((a, b) => {
                     const carsA = a.total_cars || a.cpm_total_cars || 0;
                     const carsB = b.total_cars || b.cpm_total_cars || 0;
@@ -449,7 +449,7 @@
 
                 initChart(totalHits, Math.max(0, totalAccs - totalHits));
 
-                // Recent Hits Table (En Dolu İlk 8 Hesap)
+                // Recent Hits Table
                 const recentTbody = document.getElementById('recentHitsTableBody');
                 if (allHitsData.length > 0) {
                     recentTbody.innerHTML = allHitsData.slice(0, 8).map((h, i) => `

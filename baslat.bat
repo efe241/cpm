@@ -1,8 +1,12 @@
 @echo off
-chcp 65001 > nul
-title CPM Discord Bot
-echo ===================================================
-echo 🚀 CPM Discord Checker Bot Baslatiliyor...
-echo ===================================================
+title CPM Checker Discord Bot ^& Web Dashboard
+echo ============================================================
+echo [INFO] CPM Checker Discord Bot ^& Web Server Baslatiliyor...
+echo ============================================================
+echo.
 python bot.py
-pause
+if %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo [HATA] Bot calisirken bir sorun olustu.
+    pause
+)
