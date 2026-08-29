@@ -3,8 +3,10 @@ import json
 import time
 from http.server import BaseHTTPRequestHandler
 
-HTML_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "templates", "dashboard.html")
-HITS_CACHE_FILE = "/tmp/hits_cache.json" if os.path.exists("/tmp") else os.path.join(os.path.dirname(__file__), "hits_cache.json")
+BASE_DIR = os.path.dirname(__file__)
+HTML_FILE = os.path.join(os.path.dirname(BASE_DIR), "templates", "dashboard.html")
+BUNDLE_FILE = os.path.join(BASE_DIR, "hits_data.json")
+HITS_CACHE_FILE = "/tmp/hits_cache.json" if os.path.exists("/tmp") else os.path.join(BASE_DIR, "hits_cache.json")
 
 CACHE = {
     "total_hits": 0,
@@ -18,13 +20,32 @@ CACHE = {
 
 def load_cache():
     global CACHE
-    if os.path.exists(HITS_CACHE_FILE):
+    # 1. Proje içindeki kalıcı JSON'ı yükle
+    if os.path.exists(BUNDLE_FILE):
         try:
-            with open(HITS_CACHE_FILE, "r", encoding="utf-8") as f:
+            with open(BUNDLE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 CACHE.update(data)
         except Exception:
             pass
+
+    # 2. Çalışma anında gelen yeni hitleri (/tmp) üstüne ekle
+    if os.path.exists(HITS_CACHE_FILE):
+        try:
+            with open(HITS_CACHE_FILE, "r", encoding="utf-8") as f:
+                tmp_data = json.load(f)
+                if "recent_hits" in tmp_data and isinstance(tmp_data["recent_hits"], list):
+                    for th in tmp_data["recent_hits"]:
+                        if not any(x.get("email") == th.get("email") for x in CACHE["recent_hits"]):
+                            CACHE["recent_hits"].insert(0, th)
+                if "total_hits" in tmp_data and tmp_data["total_hits"] > CACHE.get("total_hits", 0):
+                    CACHE["total_hits"] = tmp_data["total_hits"]
+                if "total_accs" in tmp_data:
+                    CACHE["total_accs"] = max(CACHE["total_accs"], tmp_data["total_accs"])
+        except Exception:
+            pass
+
+    CACHE["total_hits"] = max(CACHE.get("total_hits", 0), len(CACHE["recent_hits"]))
 
 def save_cache():
     try:
@@ -78,7 +99,7 @@ class handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(data).encode("utf-8"))
             return
 
-        # 3. İstatistik ve Tüm Hitler API'si (/api/stats)
+        # 3. İstatistik ve Tüm Hitler API'si (/api/stats veya /api/all_hits)
         elif path in ("/api/stats", "/api/all_hits"):
             self.send_response(200)
             self.send_header("Content-type", "application/json")
@@ -88,8 +109,8 @@ class handler(BaseHTTPRequestHandler):
             data = {
                 "status": "success",
                 "total_hits": CACHE.get("total_hits", len(CACHE["recent_hits"])),
-                "total_accs": CACHE.get("total_accs", 0),
-                "total_scans": CACHE.get("total_scans", 0),
+                "total_accs": CACHE.get("total_accs", len(CACHE["recent_hits"])),
+                "total_scans": CACHE.get("total_scans", 1),
                 "total_vips": CACHE.get("total_vips", 1),
                 "total_admins": CACHE.get("total_admins", 1),
                 "active_proxies": CACHE.get("active_proxies", 25),
@@ -136,9 +157,9 @@ class handler(BaseHTTPRequestHandler):
                             "password": h.get("password", "******"),
                             "level": h.get("cpm_level", h.get("level", 0)),
                             "total_cars": h.get("cpm_total_cars", h.get("total_cars", 0)),
+                            "unlocked_cars": h.get("cpm_unlocked_cars", h.get("unlocked_cars", 0)),
                             "created_at": h.get("checked_at", h.get("created_at", time.strftime("%Y-%m-%d %H:%M:%S")))
                         }
-                        # Zaten ekli değilse başa ekle
                         if not any(x.get("email") == new_item["email"] for x in CACHE["recent_hits"]):
                             CACHE["recent_hits"].insert(0, new_item)
 
@@ -164,9 +185,11 @@ class handler(BaseHTTPRequestHandler):
             except Exception as e:
                 self.send_response(400)
                 self.send_header("Content-type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
                 self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
                 return
         else:
             self.send_response(404)
+            self.send_header("Content-type", "application/json")
             self.end_headers()
