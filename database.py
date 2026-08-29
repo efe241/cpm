@@ -316,8 +316,7 @@ class Database:
 
     async def sync_hits_to_web(self, hits_list: List[dict]):
         """Web Paneline (Vercel vb.) anlık hit ve istatistikleri senkronize eder."""
-        if not WEB_DASHBOARD_URL:
-            return
+        target_url = WEB_DASHBOARD_URL or "https://tempapims-efes-projects-602609c9.vercel.app"
         try:
             # Hafif ve hızlı veri yapısına dönüştür (Megabaytlarca gereksiz token yükünü at)
             clean_hits = []
@@ -341,11 +340,15 @@ class Database:
                     "active_proxies": proxy_mgr.count()
                 }
             }
-            sync_url = f"{WEB_DASHBOARD_URL}/api/hit_sync"
+            sync_url = f"{target_url}/api/hit_sync"
             async with aiohttp.ClientSession() as s:
-                await s.post(sync_url, json=payload, timeout=aiohttp.ClientTimeout(total=6.0))
+                async with s.post(sync_url, json=payload, timeout=aiohttp.ClientTimeout(total=8.0)) as resp:
+                    if resp.status == 200:
+                        print(f"🌐 [WEB SYNC] {len(clean_hits)} adet hit Vercel sitesine başarıyla iletildi -> HTTP 200")
+                    else:
+                        print(f"⚠️ [WEB SYNC] Vercel yanıtı: HTTP {resp.status}")
         except Exception as e:
-            print(f"⚠️ Web Sync Hatasi: {e}")
+            print(f"⚠️ [WEB SYNC] Hata: {e}")
 
     async def get_global_stats(self) -> Dict[str, Any]:
         """Tüm botun genel istatistiklerini getirir."""
