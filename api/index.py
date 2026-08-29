@@ -106,15 +106,21 @@ class handler(BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
             
+            sorted_hits = sorted(
+                CACHE.get("recent_hits", []),
+                key=lambda x: (x.get("total_cars") or x.get("cpm_total_cars") or 0, x.get("level") or x.get("cpm_level") or 0),
+                reverse=True
+            )
+
             data = {
                 "status": "success",
-                "total_hits": CACHE.get("total_hits", len(CACHE["recent_hits"])),
-                "total_accs": CACHE.get("total_accs", len(CACHE["recent_hits"])),
+                "total_hits": CACHE.get("total_hits", len(sorted_hits)),
+                "total_accs": CACHE.get("total_accs", len(sorted_hits)),
                 "total_scans": CACHE.get("total_scans", 1),
                 "total_vips": CACHE.get("total_vips", 1),
                 "total_admins": CACHE.get("total_admins", 1),
-                "active_proxies": CACHE.get("active_proxies", 25),
-                "recent_hits": CACHE.get("recent_hits", [])
+                "active_proxies": CACHE.get("active_proxies", 21),
+                "recent_hits": sorted_hits
             }
             self.wfile.write(json.dumps(data).encode("utf-8"))
             return
