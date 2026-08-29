@@ -400,17 +400,17 @@ class Database:
             }
 
     async def get_recent_hits(self, limit: int = 50, user_id: Optional[int] = None) -> List[Dict[str, Any]]:
-        """En son bulunan hitleri en dolu araçlara göre listeler."""
+        """En son bulunan hitleri tarihe göre (en yeni en üstte) listeler."""
         async with aiosqlite.connect(self.db_path) as db:
             db.row_factory = aiosqlite.Row
             if user_id:
                 cursor = await db.execute(
-                    "SELECT * FROM hits WHERE user_id = ? ORDER BY total_cars DESC, id DESC LIMIT ?",
+                    "SELECT * FROM hits WHERE user_id = ? ORDER BY id DESC LIMIT ?",
                     (user_id, limit)
                 )
             else:
                 cursor = await db.execute(
-                    "SELECT * FROM hits ORDER BY total_cars DESC, id DESC LIMIT ?",
+                    "SELECT * FROM hits ORDER BY id DESC LIMIT ?",
                     (limit,)
                 )
             rows = await cursor.fetchall()

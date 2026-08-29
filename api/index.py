@@ -108,7 +108,7 @@ class handler(BaseHTTPRequestHandler):
             
             sorted_hits = sorted(
                 CACHE.get("recent_hits", []),
-                key=lambda x: (x.get("total_cars") or x.get("cpm_total_cars") or 0, x.get("level") or x.get("cpm_level") or 0),
+                key=lambda x: str(x.get("created_at") or x.get("checked_at") or ""),
                 reverse=True
             )
 

@@ -182,9 +182,9 @@
                     <div class="flex items-center justify-between mb-4">
                         <div>
                             <h2 class="text-sm font-bold text-white flex items-center gap-2">
-                                <i class="fa-solid fa-bolt text-amber-400"></i> En Dolu Canlı Hitler
+                                <i class="fa-solid fa-bolt text-amber-400"></i> En Son Bulunan Canlı Hitler
                             </h2>
-                            <p class="text-xs text-slate-400 mt-0.5">En yüksek araç sayısına göre sıralanmış hesaplar</p>
+                            <p class="text-xs text-slate-400 mt-0.5">En son taranan ve doğrulanan hesaplar (Tarihe göre sıralı)</p>
                         </div>
                         <button onclick="switchTab('tab-hits')" class="text-xs text-blue-400 hover:text-blue-300 font-medium">Tümünü Gör →</button>
                     </div>
@@ -221,6 +221,15 @@
                     <input type="text" id="searchInput" oninput="filterHits()" placeholder="E-Posta veya UID ile ara..." class="w-full bg-slate-900/80 border border-slate-700 rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition">
                 </div>
 
+                <!-- Sort Filter Dropdown -->
+                <div class="flex items-center gap-2">
+                    <span class="text-xs text-slate-400">Sıralama:</span>
+                    <select id="sortFilter" onchange="filterHits()" class="bg-slate-900/80 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500">
+                        <option value="date" selected>🕒 En Yeni (Tarihe Göre)</option>
+                        <option value="cars">🚗 En Çok Araçlı (En Dolu)</option>
+                    </select>
+                </div>
+
                 <!-- Car Filter Dropdown -->
                 <div class="flex items-center gap-2">
                     <span class="text-xs text-slate-400">Araç Filtresi:</span>
@@ -229,7 +238,7 @@
                         <option value="50">50+ Araç</option>
                         <option value="100">100+ Araç</option>
                         <option value="150">150+ Araç</option>
-                        <option value="200">200+ Araç (En Dolu)</option>
+                        <option value="200">200+ Araç</option>
                     </select>
                 </div>
 
@@ -378,14 +387,29 @@
         function filterHits() {
             const query = document.getElementById('searchInput').value.toLowerCase().trim();
             const minCars = parseInt(document.getElementById('carFilter').value) || 0;
+            const sortBy = document.getElementById('sortFilter') ? document.getElementById('sortFilter').value : 'date';
 
-            const filtered = allHitsData.filter(h => {
+            let filtered = allHitsData.filter(h => {
                 const email = (h.email || '').toLowerCase();
                 const cars = h.total_cars || h.cpm_total_cars || 0;
                 const matchesQuery = !query || email.includes(query);
                 const matchesCars = cars >= minCars;
                 return matchesQuery && matchesCars;
             });
+
+            if (sortBy === 'cars') {
+                filtered.sort((a, b) => {
+                    const carsA = a.total_cars || a.cpm_total_cars || 0;
+                    const carsB = b.total_cars || b.cpm_total_cars || 0;
+                    return carsB - carsA;
+                });
+            } else {
+                filtered.sort((a, b) => {
+                    const dateA = a.created_at || a.checked_at || '';
+                    const dateB = b.created_at || b.checked_at || '';
+                    return dateB.localeCompare(dateA);
+                });
+            }
 
             renderAllHits(filtered);
         }
@@ -428,11 +452,11 @@
 
                 allHitsData = data.recent_hits || [];
 
-                // Veriyi en dolu araçlara göre sırala
+                // Varsayılan olarak en yeni tarihe göre sırala
                 allHitsData.sort((a, b) => {
-                    const carsA = a.total_cars || a.cpm_total_cars || 0;
-                    const carsB = b.total_cars || b.cpm_total_cars || 0;
-                    return carsB - carsA;
+                    const dateA = a.created_at || a.checked_at || '';
+                    const dateB = b.created_at || b.checked_at || '';
+                    return dateB.localeCompare(dateA);
                 });
 
                 document.getElementById('statHits').textContent = Number(data.total_hits || allHitsData.length || 0).toLocaleString();

@@ -1,98 +1,874 @@
 {
-  "total_hits": 345,
-  "total_accs": 401,
-  "total_scans": 5,
+  "total_hits": 453,
+  "total_accs": 510,
+  "total_scans": 6,
   "total_vips": 1,
   "total_admins": 1,
   "active_proxies": 21,
   "recent_hits": [
     {
-      "email": "maulanaadhit44@gmail.com",
-      "password": "lupoaku123",
+      "email": "zealnihbos@gmail.com",
+      "password": "gading0812",
       "level": 3,
-      "total_cars": 216,
-      "unlocked_cars": 214,
-      "created_at": "2026-08-29 13:19:18"
+      "total_cars": 192,
+      "unlocked_cars": 192,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "maulanaadhit44@gmail.com",
-      "password": "lupoaku123",
-      "level": 3,
-      "total_cars": 216,
-      "unlocked_cars": 214,
-      "created_at": "2026-08-29 13:07:38"
+      "email": "oomsniper@gmail.com",
+      "password": "0799922926",
+      "level": 4,
+      "total_cars": 94,
+      "unlocked_cars": 94,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "maulanaadhit44@gmail.com",
-      "password": "lupoaku123",
-      "level": 3,
-      "total_cars": 216,
-      "unlocked_cars": 214,
-      "created_at": "2026-08-29 12:45:01"
+      "email": "anniercecilioleocadio20@gmail.com",
+      "password": "rv3tusT2",
+      "level": 5,
+      "total_cars": 196,
+      "unlocked_cars": 196,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "tuliogamer155@gmail.com",
-      "password": "tulio5556",
-      "level": 3,
-      "total_cars": 214,
-      "unlocked_cars": 213,
-      "created_at": "2026-08-29 13:19:18"
+      "email": "cardososeba6@gmail.com",
+      "password": "sebastianc",
+      "level": 6,
+      "total_cars": 190,
+      "unlocked_cars": 190,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "tuliogamer155@gmail.com",
-      "password": "tulio5556",
+      "email": "cuentacarparkingre@gmail.com",
+      "password": "5568075",
       "level": 3,
-      "total_cars": 214,
-      "unlocked_cars": 213,
-      "created_at": "2026-08-29 13:12:37"
+      "total_cars": 42,
+      "unlocked_cars": 42,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "maulanaadhit44@gmail.com",
-      "password": "lupoaku123",
+      "email": "chin523325@gmail.com",
+      "password": "0864986791",
       "level": 3,
-      "total_cars": 214,
-      "unlocked_cars": 214,
-      "created_at": "2026-08-29 13:12:37"
+      "total_cars": 60,
+      "unlocked_cars": 60,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "tuliogamer155@gmail.com",
-      "password": "tulio5556",
-      "level": 3,
-      "total_cars": 214,
-      "unlocked_cars": 213,
-      "created_at": "2026-08-29 13:07:38"
+      "email": "karimcpm07@gmail.com",
+      "password": "dede1234",
+      "level": 4,
+      "total_cars": 187,
+      "unlocked_cars": 187,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "marcelitoz544@gmail.com",
-      "password": "perrosolo07",
+      "email": "hectoralejandromontesdeocaa@gmail.com",
+      "password": "tachi065",
+      "level": 3,
+      "total_cars": 50,
+      "unlocked_cars": 50,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "kevindeleongularte@gmail.com",
+      "password": "57677086",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "jvou446@gmail.com",
+      "password": "suasenha123",
+      "level": 3,
+      "total_cars": 50,
+      "unlocked_cars": 50,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "arhamshaikh221@gmail.com",
+      "password": "arham1231@",
+      "level": 3,
+      "total_cars": 21,
+      "unlocked_cars": 21,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "omarljajko@gmail.com",
+      "password": "omchekomche",
+      "level": 4,
+      "total_cars": 38,
+      "unlocked_cars": 38,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "dyunrei11@gmail.com",
+      "password": "billyBOLTZ57",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "naveenseervi133@gmail.com",
+      "password": "1D2i3n4e5s6h.",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "karthikaikmr@gmail.com",
+      "password": "k1a2r3t4@",
       "level": 1,
-      "total_cars": 208,
-      "unlocked_cars": 206,
-      "created_at": "2026-08-29 13:12:37"
+      "total_cars": 8,
+      "unlocked_cars": 8,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "marcelitoz544@gmail.com",
-      "password": "perrosolo07",
-      "level": 1,
-      "total_cars": 208,
-      "unlocked_cars": 206,
-      "created_at": "2026-08-29 13:07:38"
+      "email": "khususgamegamesss@gmail.com",
+      "password": "&surl=JF8siCq99naZVZ",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "marcelitoz544@gmail.com",
-      "password": "perrosolo07",
-      "level": 1,
-      "total_cars": 208,
-      "unlocked_cars": 206,
-      "created_at": "2026-08-29 12:45:01"
+      "email": "alshehadatlaith9@gmail.com",
+      "password": "laith133244",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
-      "email": "marcelitoz544@gmail.com",
-      "password": "perrosolo07",
+      "email": "rexcar2283@gmail.com",
+      "password": "omchekomche",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "3mkkhaledwaleed@gmail.com",
+      "password": "khaledwaleed1234#",
+      "level": 5,
+      "total_cars": 127,
+      "unlocked_cars": 127,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "sjee2007@gmail.com",
+      "password": "ali1987",
       "level": 1,
-      "total_cars": 206,
-      "unlocked_cars": 206,
-      "created_at": "2026-08-29 13:19:18"
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "hamzaarslan12535@gmail.com",
+      "password": "9919792136",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "alperen74781@gmail.com",
+      "password": "alperen7478",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "mrpasolazez@gmail.com",
+      "password": "lazeztk111",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "malim123@gmail.com",
+      "password": "mal123",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ismailbzkrt58@gmail.com",
+      "password": "ismail58",
+      "level": 3,
+      "total_cars": 59,
+      "unlocked_cars": 59,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "mdanasaly18@gmail.com",
+      "password": "anasali98",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "leuriantoni4@gmail.com",
+      "password": "leuriantonio12345",
+      "level": 4,
+      "total_cars": 21,
+      "unlocked_cars": 21,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "mehmetbinzet8603@gmail.com",
+      "password": "legolas03",
+      "level": 1,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "k14979801@gmail.com",
+      "password": "hhgg071234567",
+      "level": 4,
+      "total_cars": 44,
+      "unlocked_cars": 44,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "hardikisnotreal@gmail.com",
+      "password": "qetuoadg",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "dtedjeddine74@gmail.com",
+      "password": "tedjeddine1995",
+      "level": 1,
+      "total_cars": 16,
+      "unlocked_cars": 16,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ibrahimerdogan4747@gmail.com",
+      "password": "3703478101",
+      "level": 3,
+      "total_cars": 39,
+      "unlocked_cars": 39,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "egegurbuz79@gmail.com",
+      "password": "egebabapro2012",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "keremcetin6445@gmail.com",
+      "password": "keremctn6445",
+      "level": 1,
+      "total_cars": 10,
+      "unlocked_cars": 10,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "miguelperuna6@gmail.com",
+      "password": "180531guel",
+      "level": 2,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "samkojalcak@gmail.com",
+      "password": "jalci123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "Yash661100@gmail.com",
+      "password": "111111",
+      "level": 4,
+      "total_cars": 24,
+      "unlocked_cars": 24,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "alieren0577@gmail.com",
+      "password": "66ali66",
+      "level": 4,
+      "total_cars": 23,
+      "unlocked_cars": 23,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "42kaynak24@gmail.com",
+      "password": "1234567890",
+      "level": 1,
+      "total_cars": 8,
+      "unlocked_cars": 8,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "devanshbemdre@gmail.com",
+      "password": "devanshishere",
+      "level": 2,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "kinjanplayz@gmail.com",
+      "password": "022307Eric",
+      "level": 4,
+      "total_cars": 67,
+      "unlocked_cars": 67,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ayoubdib2022@gmail.com",
+      "password": "ayoubdib2006",
+      "level": 1,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "felipebrancher29@gmail.com",
+      "password": "felipefelipe29",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "kestutistalm2008@gmail.com",
+      "password": "kestutis123",
+      "level": 5,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "emmanuelbeltre2025@gmail.com",
+      "password": "12345678910",
+      "level": 6,
+      "total_cars": 139,
+      "unlocked_cars": 139,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "asemehab72@gmail.com",
+      "password": "as222666",
+      "level": 3,
+      "total_cars": 7,
+      "unlocked_cars": 7,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "azize061721@gmail.com",
+      "password": "berat061721",
+      "level": 1,
+      "total_cars": 16,
+      "unlocked_cars": 16,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "orucgadimov123@gmail.com",
+      "password": "oruc8585kamal",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "rayanime928@gmail.com",
+      "password": "ray_365_45",
+      "level": 3,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "tugrahira.2@gmail.com",
+      "password": "456575859510",
+      "level": 1,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "uuganbayr80520731tso@gmail.com",
+      "password": "uuganbayr0919",
+      "level": 3,
+      "total_cars": 30,
+      "unlocked_cars": 30,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "royaryawanputra@gmail.com",
+      "password": "335951335951",
+      "level": 2,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "kkunlaboot@gmail.com",
+      "password": "123456789@email.com",
+      "level": 5,
+      "total_cars": 80,
+      "unlocked_cars": 80,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "brasilplaygood49@gmail.com",
+      "password": "17091610",
+      "level": 2,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "meliksahbaran1@gmail.com",
+      "password": "hhgg0712345672",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "phathrwathn03@gmail.com",
+      "password": "pao03062554",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ephantusmbuchu769@gmail.com",
+      "password": "pppppppppp",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "mohamedaminhamioui@gmail.com",
+      "password": "2NKBj!Eq",
+      "level": 2,
+      "total_cars": 24,
+      "unlocked_cars": 24,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "varolahmetumut@gmail.com",
+      "password": "72842012u",
+      "level": 1,
+      "total_cars": 21,
+      "unlocked_cars": 21,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "eddaziabdlhak2@gmail.com",
+      "password": "12345678",
+      "level": 1,
+      "total_cars": 11,
+      "unlocked_cars": 11,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ibarhimefegurkan@gmail.com",
+      "password": "grkn10",
+      "level": 1,
+      "total_cars": 15,
+      "unlocked_cars": 15,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "felipe.mari.felipe@gmail.com",
+      "password": "max_pili",
+      "level": 3,
+      "total_cars": 42,
+      "unlocked_cars": 42,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "02kadirergul@gmail.com",
+      "password": "kadirkerim",
+      "level": 6,
+      "total_cars": 118,
+      "unlocked_cars": 118,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "cabiashans@gmail.com",
+      "password": "hans201211",
+      "level": 5,
+      "total_cars": 131,
+      "unlocked_cars": 131,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "aldimuhammadsyahrafi18@gmail.com",
+      "password": "anda180203",
+      "level": 3,
+      "total_cars": 11,
+      "unlocked_cars": 11,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "remziyesaltik9@gmail.com",
+      "password": "burak12453",
+      "level": 2,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "naunsanchez801@gmail.com",
+      "password": "naun12345",
+      "level": 3,
+      "total_cars": 10,
+      "unlocked_cars": 10,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "cobanovgeorgi14@gmail.com",
+      "password": "088561gg",
+      "level": 3,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "danilomandic23000@gmail.com",
+      "password": "kreso1111980",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ramazangulcan8472@gmail.com",
+      "password": "ramazan0123",
+      "level": 1,
+      "total_cars": 23,
+      "unlocked_cars": 23,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "mandohack40@gmail.com",
+      "password": "mando4040",
+      "level": 4,
+      "total_cars": 12,
+      "unlocked_cars": 12,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "mechnogamerz3@gmail.com",
+      "password": "Sudais0504",
+      "level": 2,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "Slayzis2l17@gmail.com",
+      "password": "Slayzi75017",
+      "level": 1,
+      "total_cars": 23,
+      "unlocked_cars": 23,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "santiagoalvarez1422@gmail.com",
+      "password": "santiago1408",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "juunalpic@gmail.com",
+      "password": "11022005",
+      "level": 3,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "simonopitz161@gmail.com",
+      "password": "Milo1000",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "visiduraku12@gmail.com",
+      "password": "ElvisElvis20102010",
+      "level": 2,
+      "total_cars": 150,
+      "unlocked_cars": 150,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "yusufkursatsahin25@gmail.com",
+      "password": "9876qwer",
+      "level": 4,
+      "total_cars": 64,
+      "unlocked_cars": 64,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "alisalf250@gmali.com",
+      "password": "alisalfgghh112233",
+      "level": 2,
+      "total_cars": 106,
+      "unlocked_cars": 106,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "karacabeyzekiozgur@gmail.com",
+      "password": "zekiabin.38",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "alberto.gomez2009.ag@gmail.com",
+      "password": "Gomez8888",
+      "level": 5,
+      "total_cars": 81,
+      "unlocked_cars": 81,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "cirakliabdullah0@gmail.com",
+      "password": "05512329446055328855",
+      "level": 2,
+      "total_cars": 7,
+      "unlocked_cars": 7,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "emmanuelbeltre2024@gmail.com",
+      "password": "8292667035",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "pubgutku314@gmail.com",
+      "password": "utkubaba7",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "burnazyusufislam@gmail.com",
+      "password": "selo5461",
+      "level": 1,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ahmetcicek424242@gmail.com",
+      "password": "ahmet4232",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "jakikimalas.jali.2025@gmail.com",
+      "password": "jakikimalas1",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "siniboukroutissam@gmail.com",
+      "password": "issamsb2004",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "noahocran45@gmail.com",
+      "password": "satesategon",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "pp_pumas20@hotmail.com",
+      "password": "ser20piente",
+      "level": 2,
+      "total_cars": 31,
+      "unlocked_cars": 31,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "esamxhero@gmail.com",
+      "password": "EsamXHero@gmail1234",
+      "level": 5,
+      "total_cars": 153,
+      "unlocked_cars": 153,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "yusufefe1617@gmail.com",
+      "password": "ZewixxSokar01",
+      "level": 4,
+      "total_cars": 25,
+      "unlocked_cars": 25,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "Pritammondal11508@gmail.com",
+      "password": "pritammm",
+      "level": 6,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "lfelioe826@icloud.com",
+      "password": "NexxuzHD03",
+      "level": 6,
+      "total_cars": 14,
+      "unlocked_cars": 14,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "pavezmendozab@gmail.com",
+      "password": "samanta2020*",
+      "level": 2,
+      "total_cars": 10,
+      "unlocked_cars": 10,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "martin.pri71029@gmail.com",
+      "password": "TANQR_PLSCOMEBACK",
+      "level": 1,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "anthonyfigaro609@gmail.com",
+      "password": "6risehell",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "moraesguilherme272@gmail.com",
+      "password": "moraes777",
+      "level": 2,
+      "total_cars": 18,
+      "unlocked_cars": 18,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ahadeditz70@gmail.com",
+      "password": "ahadff12100",
+      "level": 1,
+      "total_cars": 8,
+      "unlocked_cars": 8,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "vitormanuelrivasacevedo@gmail.com",
+      "password": "victore909",
+      "level": 3,
+      "total_cars": 35,
+      "unlocked_cars": 35,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "emirhankralll55@gmail.com",
+      "password": "emirhana19388",
+      "level": 3,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "kabijobadal415@gmail.com",
+      "password": "193740",
+      "level": 5,
+      "total_cars": 66,
+      "unlocked_cars": 66,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "alisalf24@gmail.com",
+      "password": "alisalfgghh112233",
+      "level": 6,
+      "total_cars": 33,
+      "unlocked_cars": 33,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ardatofas61@gmail.com",
+      "password": "123123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "chaisiri230655@gmail.com",
+      "password": "23062555",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "b08688671@gmail.com",
+      "password": "4FdQQm-qr?2TCCQ",
+      "level": 2,
+      "total_cars": 11,
+      "unlocked_cars": 11,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "alisalf55@gmail.co",
+      "password": "alisalfgghh112233",
+      "level": 5,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 15:44:49"
+    },
+    {
+      "email": "ediz38bera@gmail.com",
+      "password": "EdizBera12",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 15:44:49"
     },
     {
       "email": "canli_discord_test@gmail.com",
@@ -103,212 +879,292 @@
       "created_at": "2026-08-29 14:43:46"
     },
     {
-      "email": "bilal80401@gmail.com",
-      "password": "bilal123huso",
-      "level": 3,
-      "total_cars": 193,
-      "unlocked_cars": 191,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "bilal80401@gmail.com",
-      "password": "bilal123huso",
-      "level": 3,
-      "total_cars": 193,
-      "unlocked_cars": 191,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "bilal80401@gmail.com",
-      "password": "bilal123huso",
-      "level": 3,
-      "total_cars": 191,
-      "unlocked_cars": 191,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "lakane.shawn974311@gmail.com",
-      "password": "Giovani16",
-      "level": 3,
-      "total_cars": 166,
-      "unlocked_cars": 164,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "lakane.shawn974311@gmail.com",
-      "password": "Giovani16",
-      "level": 3,
-      "total_cars": 166,
-      "unlocked_cars": 164,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "lakane.shawn974311@gmail.com",
-      "password": "Giovani16",
-      "level": 3,
-      "total_cars": 166,
-      "unlocked_cars": 164,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "lakane.shawn974311@gmail.com",
-      "password": "Giovani16",
-      "level": 3,
-      "total_cars": 166,
-      "unlocked_cars": 164,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "pinheirofelipe613@gmail.com",
-      "password": "fps09042010",
-      "level": 4,
-      "total_cars": 160,
-      "unlocked_cars": 158,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "pinheirofelipe613@gmail.com",
-      "password": "fps09042010",
-      "level": 4,
-      "total_cars": 160,
-      "unlocked_cars": 158,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "pinheirofelipe613@gmail.com",
-      "password": "fps09042010",
-      "level": 4,
-      "total_cars": 160,
-      "unlocked_cars": 158,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "pinheirofelipe613@gmail.com",
-      "password": "fps09042010",
-      "level": 0,
-      "total_cars": 158,
-      "unlocked_cars": 158,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "zygimantasvitkevicius@gmail.com",
-      "password": "zygis445",
-      "level": 6,
-      "total_cars": 154,
-      "unlocked_cars": 152,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "zygimantasvitkevicius@gmail.com",
-      "password": "zygis445",
-      "level": 6,
-      "total_cars": 154,
-      "unlocked_cars": 152,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "zygimantasvitkevicius@gmail.com",
-      "password": "zygis445",
-      "level": 6,
-      "total_cars": 154,
-      "unlocked_cars": 152,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "zygimantasvitkevicius@gmail.com",
-      "password": "zygis445",
-      "level": 6,
-      "total_cars": 154,
-      "unlocked_cars": 152,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "nicolasalvarezzubieta@gmail.com",
-      "password": "Ni1025143208",
-      "level": 2,
-      "total_cars": 139,
-      "unlocked_cars": 139,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "nicolasalvarezzubieta@gmail.com",
-      "password": "Ni1025143208",
-      "level": 2,
-      "total_cars": 139,
-      "unlocked_cars": 139,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "nicolasalvarezzubieta@gmail.com",
-      "password": "Ni1025143208",
-      "level": 2,
-      "total_cars": 139,
-      "unlocked_cars": 139,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "andreiiann123@gmail.com",
-      "password": "loloknoob",
-      "level": 3,
-      "total_cars": 96,
-      "unlocked_cars": 96,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "andreiiann123@gmail.com",
-      "password": "loloknoob",
-      "level": 3,
-      "total_cars": 96,
-      "unlocked_cars": 96,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "andreiiann123@gmail.com",
-      "password": "loloknoob",
-      "level": 0,
-      "total_cars": 96,
-      "unlocked_cars": 96,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "jaramillosamuel882@gmail.com",
-      "password": "1015190941",
-      "level": 4,
-      "total_cars": 84,
-      "unlocked_cars": 83,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "jaramillosamuel882@gmail.com",
-      "password": "1015190941",
-      "level": 4,
-      "total_cars": 84,
-      "unlocked_cars": 83,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "renatmagomadov49@gmail.com",
-      "password": "renatnice49",
-      "level": 0,
-      "total_cars": 70,
+      "email": "baraa.firassattam@gmail.com",
+      "password": "05373029973",
+      "level": 1,
+      "total_cars": 4,
       "unlocked_cars": 0,
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "levinelian12@gmail.com",
-      "password": "Levinelian12",
-      "level": 2,
-      "total_cars": 66,
-      "unlocked_cars": 66,
-      "created_at": "2026-08-29 13:12:37"
+      "email": "kksln9876@gmail.com",
+      "password": "Nc241689",
+      "level": 1,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "levinelian12@gmail.com",
-      "password": "Levinelian12",
+      "email": "thexgod456@gmail.com",
+      "password": "rungsit6301",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "hamizgamez@gmail.com",
+      "password": "7722567$",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "emredoganayesmer@gmail.com",
+      "password": "esmer5353",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "elianj103@gmail.com",
+      "password": "johancito58",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "danila.xachirashvili@gmail.com",
+      "password": "mamukadani18",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "ahmedmehmediriza@gmail.com",
+      "password": "221210aa",
+      "level": 0,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "marcelitoz544@gmail.com",
+      "password": "perrosolo07",
+      "level": 1,
+      "total_cars": 206,
+      "unlocked_cars": 206,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "revelarmylene@gmail.com",
+      "password": "KuyaElla1202",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "lakane.shawn974311@gmail.com",
+      "password": "Giovani16",
+      "level": 3,
+      "total_cars": 166,
+      "unlocked_cars": 164,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "jedemmaludecu16@gmail.com",
+      "password": "marko.123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "radekkimsa@gmail.com",
+      "password": "Radoslaw123",
+      "level": 1,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "josetejb55@gmail.com",
+      "password": "willyrex55",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "nicolasalvarezzubieta@gmail.com",
+      "password": "Ni1025143208",
       "level": 2,
-      "total_cars": 66,
-      "unlocked_cars": 66,
-      "created_at": "2026-08-29 13:07:38"
+      "total_cars": 139,
+      "unlocked_cars": 139,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "dabrowskiadi5@gmail.com",
+      "password": "xd12345.",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "alkaabihamad105@gmail.com",
+      "password": "Hamad2007",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "rbrocks123462@gmail.com",
+      "password": "Dragon1413",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "aronkozsiga@gmail.com",
+      "password": "aronkozsiga",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "davicagao1000@gmail.com",
+      "password": "cagaolindo",
+      "level": 0,
+      "total_cars": 17,
+      "unlocked_cars": 17,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "ltoccit@gmail.com",
+      "password": "Gatitobmx01",
+      "level": 1,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "ahxhxhhdh@gmail.com",
+      "password": "Cocomelon321",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "pkxd-atualizo@gmail.com",
+      "password": "12345678u",
+      "level": 0,
+      "total_cars": 36,
+      "unlocked_cars": 36,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "tuliogamer155@gmail.com",
+      "password": "tulio5556",
+      "level": 3,
+      "total_cars": 214,
+      "unlocked_cars": 213,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "bilal80401@gmail.com",
+      "password": "bilal123huso",
+      "level": 3,
+      "total_cars": 193,
+      "unlocked_cars": 191,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "javilalinea.jr@gmail.com",
+      "password": "Toloko00",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "blazejkalenczuk139@gmail.com",
+      "password": "Blazej1407",
+      "level": 0,
+      "total_cars": 12,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "totogameop4@gmail.com",
+      "password": "20226722",
+      "level": 0,
+      "total_cars": 9,
+      "unlocked_cars": 9,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "maulanaadhit44@gmail.com",
+      "password": "lupoaku123",
+      "level": 3,
+      "total_cars": 216,
+      "unlocked_cars": 214,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "fxerick868@gmail.com",
+      "password": "erick868ft",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "sunday.pat0557@gmail.com",
+      "password": "Sunday0557",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "bingole749@gmail.com",
+      "password": "emirhans741",
+      "level": 3,
+      "total_cars": 36,
+      "unlocked_cars": 36,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "alonsojp200411@gmail.com",
+      "password": "jimenezz26",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "mdanial011@gmail.com",
+      "password": "danial011",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "rafaelodonatelo02@gmail.com",
+      "password": "Smecher123",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "dragosmuresan33@gmail.com",
+      "password": "dragos2009",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
     },
     {
       "email": "las.sultan2010@gmail.com",
@@ -319,140 +1175,220 @@
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "las.sultan2010@gmail.com",
-      "password": "Las14600",
+      "email": "korayvural348@gmail.com",
+      "password": "Koraysu2004",
+      "level": 1,
+      "total_cars": 29,
+      "unlocked_cars": 29,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "amarijefferson0909@gmail.com",
+      "password": "Amari911",
       "level": 0,
-      "total_cars": 38,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "frameza555zaza@gmail.com",
+      "password": "frame555za",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "kayraokatan@gmail.com",
+      "password": "Kayra2009",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "leoneldejesus183@gmail.com",
+      "password": "nenel3334",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "dukisaarse55@gmail.com",
+      "password": "DusanKing12",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "scherer3213@gmail.com",
+      "password": "luca1805",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "enesproo41@gmail.com",
+      "password": "05353580577e",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "andreaperina07@gmail.com",
+      "password": "matrix883",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "keyz.xottic@gmail.com",
+      "password": "Jose02092009",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "nguyendangquyet2002@gmail.com",
+      "password": "999999Qk",
+      "level": 1,
+      "total_cars": 22,
+      "unlocked_cars": 22,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "rteodor93@gmail.com",
+      "password": "relu91346",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "kisposze6@gmail.com",
+      "password": "Barcelona93",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "evan.d1yeah@gmail.com",
+      "password": "uuu800uuu",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "stumposamuele@gmail.com",
+      "password": "Samuele25",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "diaatdiaa@gmail.com",
+      "password": "asdqwerasd",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "herbertineme@gmail.com",
+      "password": "nduwayo.",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "somtoehima65@gmail.com",
+      "password": "65478901",
+      "level": 0,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "fcpaxx@gmail.com",
+      "password": "intensamente",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "nehuen44r@gmail.com",
+      "password": "bautista2108",
+      "level": 0,
+      "total_cars": 19,
+      "unlocked_cars": 19,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "bricoraif@gmail.com",
+      "password": "rafkee23",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "midoalg1234@gmail.com",
+      "password": "dz123-123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "marwanbayri@gmail.com",
+      "password": "marwan2006",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "luanmakalystherario@gmail.com",
+      "password": "meusamigos1",
+      "level": 0,
+      "total_cars": 0,
       "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "las.sultan2010@gmail.com",
-      "password": "Las14600",
-      "level": 0,
-      "total_cars": 38,
-      "unlocked_cars": 38,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "bingole749@gmail.com",
-      "password": "emirhans741",
-      "level": 3,
-      "total_cars": 36,
-      "unlocked_cars": 36,
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "bingole749@gmail.com",
-      "password": "emirhans741",
-      "level": 3,
-      "total_cars": 36,
-      "unlocked_cars": 36,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "bingole749@gmail.com",
-      "password": "emirhans741",
-      "level": 3,
-      "total_cars": 36,
-      "unlocked_cars": 36,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "pkxd-atualizo@gmail.com",
-      "password": "12345678u",
+      "email": "kakalevi9@gmail.com",
+      "password": "mestermc123",
       "level": 0,
-      "total_cars": 36,
-      "unlocked_cars": 36,
+      "total_cars": 0,
+      "unlocked_cars": 0,
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "pkxd-atualizo@gmail.com",
-      "password": "12345678u",
+      "email": "adamrazmara10@gmail.com",
+      "password": "Adamalae1",
       "level": 0,
-      "total_cars": 36,
-      "unlocked_cars": 36,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "pkxd-atualizo@gmail.com",
-      "password": "12345678u",
-      "level": 0,
-      "total_cars": 36,
-      "unlocked_cars": 36,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "korayvural348@gmail.com",
-      "password": "Koraysu2004",
-      "level": 1,
-      "total_cars": 29,
-      "unlocked_cars": 29,
+      "total_cars": 7,
+      "unlocked_cars": 7,
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "korayvural348@gmail.com",
-      "password": "Koraysu2004",
-      "level": 1,
-      "total_cars": 29,
-      "unlocked_cars": 29,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "korayvural348@gmail.com",
-      "password": "Koraysu2004",
-      "level": 1,
-      "total_cars": 29,
-      "unlocked_cars": 29,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "korayvural348@gmail.com",
-      "password": "Koraysu2004",
-      "level": 1,
-      "total_cars": 29,
-      "unlocked_cars": 29,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "test@cpm.com",
-      "password": "pass",
-      "level": 10,
-      "total_cars": 25,
-      "unlocked_cars": 20,
-      "created_at": "2026-08-29 12:26:11"
-    },
-    {
-      "email": "nguyendangquyet2002@gmail.com",
-      "password": "999999Qk",
-      "level": 1,
-      "total_cars": 22,
-      "unlocked_cars": 22,
+      "email": "eazyluv27@gmail.com",
+      "password": "shithead253",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 0,
       "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "nguyendangquyet2002@gmail.com",
-      "password": "999999Qk",
-      "level": 1,
-      "total_cars": 22,
-      "unlocked_cars": 22,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "nguyendangquyet2002@gmail.com",
-      "password": "999999Qk",
-      "level": 1,
-      "total_cars": 22,
-      "unlocked_cars": 22,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "nguyendangquyet2002@gmail.com",
-      "password": "999999Qk",
-      "level": 1,
-      "total_cars": 22,
-      "unlocked_cars": 22,
-      "created_at": "2026-08-29 12:45:01"
     },
     {
       "email": "alif1512@gmail.com",
@@ -463,100 +1399,68 @@
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "alif1512@gmail.com",
-      "password": "danish8477",
+      "email": "ialaliashvili20@gmail.com",
+      "password": "nikagamer",
       "level": 0,
-      "total_cars": 21,
-      "unlocked_cars": 21,
-      "created_at": "2026-08-29 13:12:37"
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "alif1512@gmail.com",
-      "password": "danish8477",
+      "email": "ariksurabaya777@gmail.com",
+      "password": "Bihan2012",
       "level": 0,
-      "total_cars": 21,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "moriskaramoko@gmail.com",
+      "password": "karamokovi36",
+      "level": 1,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "pinheirofelipe613@gmail.com",
+      "password": "fps09042010",
+      "level": 4,
+      "total_cars": 160,
+      "unlocked_cars": 158,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "zygimantasvitkevicius@gmail.com",
+      "password": "zygis445",
+      "level": 6,
+      "total_cars": 154,
+      "unlocked_cars": 152,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "nehemiaetando21@gmail.com",
+      "password": "Etando200",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "brokendinoguy@gmail.com",
+      "password": "Rokijsshera1",
+      "level": 0,
+      "total_cars": 0,
       "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "nehuen44r@gmail.com",
-      "password": "bautista2108",
-      "level": 0,
-      "total_cars": 19,
-      "unlocked_cars": 19,
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "nehuen44r@gmail.com",
-      "password": "bautista2108",
-      "level": 0,
-      "total_cars": 19,
-      "unlocked_cars": 19,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "nehuen44r@gmail.com",
-      "password": "bautista2108",
-      "level": 0,
-      "total_cars": 19,
-      "unlocked_cars": 19,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "nehuen44r@gmail.com",
-      "password": "bautista2108",
-      "level": 0,
-      "total_cars": 19,
-      "unlocked_cars": 19,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "davicagao1000@gmail.com",
-      "password": "cagaolindo",
-      "level": 0,
-      "total_cars": 17,
-      "unlocked_cars": 17,
+      "email": "levinelian12@gmail.com",
+      "password": "Levinelian12",
+      "level": 2,
+      "total_cars": 0,
+      "unlocked_cars": 0,
       "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "davicagao1000@gmail.com",
-      "password": "cagaolindo",
-      "level": 0,
-      "total_cars": 17,
-      "unlocked_cars": 17,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "markotrpcevski155@gmail.com",
-      "password": "marko123",
-      "level": 0,
-      "total_cars": 17,
-      "unlocked_cars": 16,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "davicagao1000@gmail.com",
-      "password": "cagaolindo",
-      "level": 0,
-      "total_cars": 17,
-      "unlocked_cars": 17,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "markotrpcevski155@gmail.com",
-      "password": "marko123",
-      "level": 0,
-      "total_cars": 17,
-      "unlocked_cars": 16,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "davicagao1000@gmail.com",
-      "password": "cagaolindo",
-      "level": 0,
-      "total_cars": 17,
-      "unlocked_cars": 17,
-      "created_at": "2026-08-29 12:45:01"
     },
     {
       "email": "markotrpcevski155@gmail.com",
@@ -567,11 +1471,123 @@
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "veserkausaulina@gmail.com",
-      "password": "kokosapp15",
-      "level": 2,
-      "total_cars": 13,
-      "unlocked_cars": 13,
+      "email": "andreiiann123@gmail.com",
+      "password": "loloknoob",
+      "level": 0,
+      "total_cars": 96,
+      "unlocked_cars": 96,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "joelcarey96@gmail.com",
+      "password": "Joel2008!!",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "kice968@gmail.com",
+      "password": "icekid968",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "dominikokunkowski2@gmail.com",
+      "password": "dominoxd2",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "lulumanzu2@gmail.com",
+      "password": "Maricica1",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "kambrunstevan@gmail.com",
+      "password": "sTEVAN49",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "andreyjbuah@gmail.com",
+      "password": "kuyaako123",
+      "level": 0,
+      "total_cars": 10,
+      "unlocked_cars": 10,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "renatmagomadov49@gmail.com",
+      "password": "renatnice49",
+      "level": 0,
+      "total_cars": 70,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "nasemrayan18@gmail.com",
+      "password": "058Nasem2007",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "syahiraha32@gmail.com",
+      "password": "syasya0412",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "eagleb576@gmail.com",
+      "password": "zufar21044",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "yoshiyuki2004d@gmail.com",
+      "password": "gG20041128",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "ahmedtitanium2015@gmail.com",
+      "password": "inet2015",
+      "level": 1,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "muhd.akifdanish@gmail.com",
+      "password": "338616563acb",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "jaramillosamuel882@gmail.com",
+      "password": "1015190941",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
       "created_at": "2026-08-29 13:19:18"
     },
     {
@@ -580,38 +1596,62 @@
       "level": 2,
       "total_cars": 13,
       "unlocked_cars": 13,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "veserkausaulina@gmail.com",
-      "password": "kokosapp15",
-      "level": 2,
-      "total_cars": 13,
-      "unlocked_cars": 13,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "veserkausaulina@gmail.com",
-      "password": "kokosapp15",
-      "level": 2,
-      "total_cars": 13,
-      "unlocked_cars": 13,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "radekkimsa@gmail.com",
-      "password": "Radoslaw123",
-      "level": 1,
-      "total_cars": 13,
-      "unlocked_cars": 13,
       "created_at": "2026-08-29 13:19:18"
     },
     {
-      "email": "radekkimsa@gmail.com",
-      "password": "Radoslaw123",
-      "level": 1,
-      "total_cars": 13,
-      "unlocked_cars": 13,
+      "email": "ketzazxc@gmail.com",
+      "password": "ketza1211",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "bb493293@gmail.com",
+      "password": "iubita21",
+      "level": 4,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "jvitor.goncalvess@gmail.com",
+      "password": "jvgr2008",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "egprince8@gmail.com",
+      "password": "Boltoscar2",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "arifkahraman595@gmail.com",
+      "password": "Opel_!099",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:19:18"
+    },
+    {
+      "email": "hamizgamez@gmail.com",
+      "password": "7722567$",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "alkaabihamad105@gmail.com",
+      "password": "Hamad2007",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
       "created_at": "2026-08-29 13:12:37"
     },
     {
@@ -620,15 +1660,143 @@
       "level": 1,
       "total_cars": 13,
       "unlocked_cars": 13,
-      "created_at": "2026-08-29 13:07:38"
+      "created_at": "2026-08-29 13:12:37"
     },
     {
-      "email": "radekkimsa@gmail.com",
-      "password": "Radoslaw123",
+      "email": "tuliogamer155@gmail.com",
+      "password": "tulio5556",
+      "level": 3,
+      "total_cars": 214,
+      "unlocked_cars": 213,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "maulanaadhit44@gmail.com",
+      "password": "lupoaku123",
+      "level": 3,
+      "total_cars": 214,
+      "unlocked_cars": 214,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "alonsojp200411@gmail.com",
+      "password": "jimenezz26",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "sunday.pat0557@gmail.com",
+      "password": "Sunday0557",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "thexgod456@gmail.com",
+      "password": "rungsit6301",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "kayraokatan@gmail.com",
+      "password": "Kayra2009",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "kksln9876@gmail.com",
+      "password": "Nc241689",
       "level": 1,
-      "total_cars": 13,
-      "unlocked_cars": 13,
-      "created_at": "2026-08-29 12:45:01"
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "kisposze6@gmail.com",
+      "password": "Barcelona93",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "dabrowskiadi5@gmail.com",
+      "password": "xd12345.",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "rbrocks123462@gmail.com",
+      "password": "Dragon1413",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "josetejb55@gmail.com",
+      "password": "willyrex55",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "danila.xachirashvili@gmail.com",
+      "password": "mamukadani18",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "lakane.shawn974311@gmail.com",
+      "password": "Giovani16",
+      "level": 3,
+      "total_cars": 166,
+      "unlocked_cars": 164,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "pkxd-atualizo@gmail.com",
+      "password": "12345678u",
+      "level": 0,
+      "total_cars": 36,
+      "unlocked_cars": 36,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "elianj103@gmail.com",
+      "password": "johancito58",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "ltoccit@gmail.com",
+      "password": "Gatitobmx01",
+      "level": 1,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "midoalg1234@gmail.com",
+      "password": "dz123-123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
     },
     {
       "email": "blazejkalenczuk139@gmail.com",
@@ -636,390 +1804,22 @@
       "level": 0,
       "total_cars": 12,
       "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "blazejkalenczuk139@gmail.com",
-      "password": "Blazej1407",
-      "level": 0,
-      "total_cars": 12,
-      "unlocked_cars": 0,
       "created_at": "2026-08-29 13:12:37"
     },
     {
-      "email": "andreyjbuah@gmail.com",
-      "password": "kuyaako123",
-      "level": 0,
-      "total_cars": 10,
-      "unlocked_cars": 10,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "andreyjbuah@gmail.com",
-      "password": "kuyaako123",
-      "level": 0,
-      "total_cars": 10,
-      "unlocked_cars": 10,
+      "email": "bilal80401@gmail.com",
+      "password": "bilal123huso",
+      "level": 3,
+      "total_cars": 193,
+      "unlocked_cars": 191,
       "created_at": "2026-08-29 13:12:37"
     },
     {
-      "email": "andreyjbuah@gmail.com",
-      "password": "kuyaako123",
+      "email": "javilalinea.jr@gmail.com",
+      "password": "Toloko00",
       "level": 0,
-      "total_cars": 10,
-      "unlocked_cars": 10,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "totogameop4@gmail.com",
-      "password": "20226722",
-      "level": 0,
-      "total_cars": 9,
-      "unlocked_cars": 9,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "totogameop4@gmail.com",
-      "password": "20226722",
-      "level": 0,
-      "total_cars": 9,
-      "unlocked_cars": 9,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "totogameop4@gmail.com",
-      "password": "20226722",
-      "level": 0,
-      "total_cars": 9,
-      "unlocked_cars": 9,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "totogameop4@gmail.com",
-      "password": "20226722",
-      "level": 0,
-      "total_cars": 9,
-      "unlocked_cars": 9,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "adamrazmara10@gmail.com",
-      "password": "Adamalae1",
-      "level": 0,
-      "total_cars": 7,
-      "unlocked_cars": 7,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "adamrazmara10@gmail.com",
-      "password": "Adamalae1",
-      "level": 0,
-      "total_cars": 7,
-      "unlocked_cars": 7,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "adamrazmara10@gmail.com",
-      "password": "Adamalae1",
-      "level": 0,
-      "total_cars": 7,
-      "unlocked_cars": 7,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "adamrazmara10@gmail.com",
-      "password": "Adamalae1",
-      "level": 0,
-      "total_cars": 7,
-      "unlocked_cars": 7,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "bb493293@gmail.com",
-      "password": "iubita21",
-      "level": 4,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "bb493293@gmail.com",
-      "password": "iubita21",
-      "level": 4,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "bb493293@gmail.com",
-      "password": "iubita21",
-      "level": 4,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "joelcarey96@gmail.com",
-      "password": "Joel2008!!",
-      "level": 1,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "joelcarey96@gmail.com",
-      "password": "Joel2008!!",
-      "level": 1,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "ahxhxhhdh@gmail.com",
-      "password": "Cocomelon321",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "scherer3213@gmail.com",
-      "password": "luca1805",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "joelcarey96@gmail.com",
-      "password": "Joel2008!!",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "ahxhxhhdh@gmail.com",
-      "password": "Cocomelon321",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "ahxhxhhdh@gmail.com",
-      "password": "Cocomelon321",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "scherer3213@gmail.com",
-      "password": "luca1805",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "ahxhxhhdh@gmail.com",
-      "password": "Cocomelon321",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "bb493293@gmail.com",
-      "password": "iubita21",
-      "level": 0,
-      "total_cars": 6,
-      "unlocked_cars": 6,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "moriskaramoko@gmail.com",
-      "password": "karamokovi36",
-      "level": 1,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "moriskaramoko@gmail.com",
-      "password": "karamokovi36",
-      "level": 1,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "moriskaramoko@gmail.com",
-      "password": "karamokovi36",
-      "level": 1,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "moriskaramoko@gmail.com",
-      "password": "karamokovi36",
-      "level": 1,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "thexgod456@gmail.com",
-      "password": "rungsit6301",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "rbrocks123462@gmail.com",
-      "password": "Dragon1413",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "alonsojp200411@gmail.com",
-      "password": "jimenezz26",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "rafaelodonatelo02@gmail.com",
-      "password": "Smecher123",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "eazyluv27@gmail.com",
-      "password": "shithead253",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "alonsojp200411@gmail.com",
-      "password": "jimenezz26",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "thexgod456@gmail.com",
-      "password": "rungsit6301",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "rbrocks123462@gmail.com",
-      "password": "Dragon1413",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "rafaelodonatelo02@gmail.com",
-      "password": "Smecher123",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "eazyluv27@gmail.com",
-      "password": "shithead253",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "alonsojp200411@gmail.com",
-      "password": "jimenezz26",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "rbrocks123462@gmail.com",
-      "password": "Dragon1413",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "rafaelodonatelo02@gmail.com",
-      "password": "Smecher123",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "eazyluv27@gmail.com",
-      "password": "shithead253",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "thexgod456@gmail.com",
-      "password": "rungsit6301",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "rbrocks123462@gmail.com",
-      "password": "Dragon1413",
-      "level": 0,
-      "total_cars": 5,
-      "unlocked_cars": 5,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "baraa.firassattam@gmail.com",
-      "password": "05373029973",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "ltoccit@gmail.com",
-      "password": "Gatitobmx01",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "ltoccit@gmail.com",
-      "password": "Gatitobmx01",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 4,
+      "total_cars": 2,
+      "unlocked_cars": 2,
       "created_at": "2026-08-29 13:12:37"
     },
     {
@@ -1029,54 +1829,6 @@
       "total_cars": 4,
       "unlocked_cars": 4,
       "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "baraa.firassattam@gmail.com",
-      "password": "05373029973",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "ltoccit@gmail.com",
-      "password": "Gatitobmx01",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "baraa.firassattam@gmail.com",
-      "password": "05373029973",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "ltoccit@gmail.com",
-      "password": "Gatitobmx01",
-      "level": 1,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "ahmedmehmediriza@gmail.com",
-      "password": "221210aa",
-      "level": 0,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "somtoehima65@gmail.com",
-      "password": "65478901",
-      "level": 0,
-      "total_cars": 4,
-      "unlocked_cars": 4,
-      "created_at": "2026-08-29 13:19:18"
     },
     {
       "email": "ahmedmehmediriza@gmail.com",
@@ -1087,11 +1839,539 @@
       "created_at": "2026-08-29 13:12:37"
     },
     {
+      "email": "nehuen44r@gmail.com",
+      "password": "bautista2108",
+      "level": 0,
+      "total_cars": 19,
+      "unlocked_cars": 19,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "jedemmaludecu16@gmail.com",
+      "password": "marko.123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "fxerick868@gmail.com",
+      "password": "erick868ft",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "mdanial011@gmail.com",
+      "password": "danial011",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "totogameop4@gmail.com",
+      "password": "20226722",
+      "level": 0,
+      "total_cars": 9,
+      "unlocked_cars": 9,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "scherer3213@gmail.com",
+      "password": "luca1805",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "muhd.akifdanish@gmail.com",
+      "password": "338616563acb",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "aronkozsiga@gmail.com",
+      "password": "aronkozsiga",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "korayvural348@gmail.com",
+      "password": "Koraysu2004",
+      "level": 1,
+      "total_cars": 29,
+      "unlocked_cars": 29,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "ahxhxhhdh@gmail.com",
+      "password": "Cocomelon321",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "ketzazxc@gmail.com",
+      "password": "ketza1211",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "evan.d1yeah@gmail.com",
+      "password": "uuu800uuu",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "pinheirofelipe613@gmail.com",
+      "password": "fps09042010",
+      "level": 4,
+      "total_cars": 160,
+      "unlocked_cars": 158,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "marcelitoz544@gmail.com",
+      "password": "perrosolo07",
+      "level": 1,
+      "total_cars": 208,
+      "unlocked_cars": 206,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "amarijefferson0909@gmail.com",
+      "password": "Amari911",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "leoneldejesus183@gmail.com",
+      "password": "nenel3334",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "dominikokunkowski2@gmail.com",
+      "password": "dominoxd2",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "andreaperina07@gmail.com",
+      "password": "matrix883",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "moriskaramoko@gmail.com",
+      "password": "karamokovi36",
+      "level": 1,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "frameza555zaza@gmail.com",
+      "password": "frame555za",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "enesproo41@gmail.com",
+      "password": "05353580577e",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "revelarmylene@gmail.com",
+      "password": "KuyaElla1202",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "brokendinoguy@gmail.com",
+      "password": "Rokijsshera1",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "keyz.xottic@gmail.com",
+      "password": "Jose02092009",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "davicagao1000@gmail.com",
+      "password": "cagaolindo",
+      "level": 0,
+      "total_cars": 17,
+      "unlocked_cars": 17,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "baruchdominguez979@gmail.com",
+      "password": "rubiromoromo",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "dukisaarse55@gmail.com",
+      "password": "DusanKing12",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "bricoraif@gmail.com",
+      "password": "rafkee23",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "nicolasalvarezzubieta@gmail.com",
+      "password": "Ni1025143208",
+      "level": 2,
+      "total_cars": 139,
+      "unlocked_cars": 139,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "emredoganayesmer@gmail.com",
+      "password": "esmer5353",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "las.sultan2010@gmail.com",
+      "password": "Las14600",
+      "level": 0,
+      "total_cars": 38,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "nguyendangquyet2002@gmail.com",
+      "password": "999999Qk",
+      "level": 1,
+      "total_cars": 22,
+      "unlocked_cars": 22,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "fcpaxx@gmail.com",
+      "password": "intensamente",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "arifkahraman595@gmail.com",
+      "password": "Opel_!099",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "luanmakalystherario@gmail.com",
+      "password": "meusamigos1",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "kakalevi9@gmail.com",
+      "password": "mestermc123",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "ialaliashvili20@gmail.com",
+      "password": "nikagamer",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "bingole749@gmail.com",
+      "password": "emirhans741",
+      "level": 3,
+      "total_cars": 36,
+      "unlocked_cars": 36,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
       "email": "somtoehima65@gmail.com",
       "password": "65478901",
       "level": 0,
       "total_cars": 4,
       "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "veserkausaulina@gmail.com",
+      "password": "kokosapp15",
+      "level": 2,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "eagleb576@gmail.com",
+      "password": "zufar21044",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "ariksurabaya777@gmail.com",
+      "password": "Bihan2012",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "rafaelodonatelo02@gmail.com",
+      "password": "Smecher123",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "jaramillosamuel882@gmail.com",
+      "password": "1015190941",
+      "level": 4,
+      "total_cars": 84,
+      "unlocked_cars": 83,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "dragosmuresan33@gmail.com",
+      "password": "dragos2009",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "marwanbayri@gmail.com",
+      "password": "marwan2006",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "yoshiyuki2004d@gmail.com",
+      "password": "gG20041128",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "rteodor93@gmail.com",
+      "password": "relu91346",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "adamrazmara10@gmail.com",
+      "password": "Adamalae1",
+      "level": 0,
+      "total_cars": 7,
+      "unlocked_cars": 7,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "kambrunstevan@gmail.com",
+      "password": "sTEVAN49",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "jvitor.goncalvess@gmail.com",
+      "password": "jvgr2008",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "syahiraha32@gmail.com",
+      "password": "syasya0412",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "andreyjbuah@gmail.com",
+      "password": "kuyaako123",
+      "level": 0,
+      "total_cars": 10,
+      "unlocked_cars": 10,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "eazyluv27@gmail.com",
+      "password": "shithead253",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "markotrpcevski155@gmail.com",
+      "password": "marko123",
+      "level": 0,
+      "total_cars": 17,
+      "unlocked_cars": 16,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "diaatdiaa@gmail.com",
+      "password": "asdqwerasd",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "levinelian12@gmail.com",
+      "password": "Levinelian12",
+      "level": 2,
+      "total_cars": 66,
+      "unlocked_cars": 66,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "ahmedtitanium2015@gmail.com",
+      "password": "inet2015",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "alif1512@gmail.com",
+      "password": "danish8477",
+      "level": 0,
+      "total_cars": 21,
+      "unlocked_cars": 21,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "andreiiann123@gmail.com",
+      "password": "loloknoob",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "zygimantasvitkevicius@gmail.com",
+      "password": "zygis445",
+      "level": 6,
+      "total_cars": 154,
+      "unlocked_cars": 152,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "kice968@gmail.com",
+      "password": "icekid968",
+      "level": 1,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "nehemiaetando21@gmail.com",
+      "password": "Etando200",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "renatmagomadov49@gmail.com",
+      "password": "renatnice49",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "egprince8@gmail.com",
+      "password": "Boltoscar2",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "herbertineme@gmail.com",
+      "password": "nduwayo.",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "lulumanzu2@gmail.com",
+      "password": "Maricica1",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
       "created_at": "2026-08-29 13:12:37"
     },
     {
@@ -1103,11 +2383,459 @@
       "created_at": "2026-08-29 13:12:37"
     },
     {
+      "email": "joelcarey96@gmail.com",
+      "password": "Joel2008!!",
+      "level": 1,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "znaidiaziz553@gmail.com",
+      "password": "aziz1050t",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "bb493293@gmail.com",
+      "password": "iubita21",
+      "level": 4,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:12:37"
+    },
+    {
+      "email": "marcelitoz544@gmail.com",
+      "password": "perrosolo07",
+      "level": 1,
+      "total_cars": 208,
+      "unlocked_cars": 206,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "dabrowskiadi5@gmail.com",
+      "password": "xd12345.",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "thexgod456@gmail.com",
+      "password": "rungsit6301",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "baraa.firassattam@gmail.com",
+      "password": "05373029973",
+      "level": 1,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "tuliogamer155@gmail.com",
+      "password": "tulio5556",
+      "level": 3,
+      "total_cars": 214,
+      "unlocked_cars": 213,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "jedemmaludecu16@gmail.com",
+      "password": "marko.123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "dominikokunkowski2@gmail.com",
+      "password": "dominoxd2",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "danila.xachirashvili@gmail.com",
+      "password": "mamukadani18",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "enesproo41@gmail.com",
+      "password": "05353580577e",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "alonsojp200411@gmail.com",
+      "password": "jimenezz26",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "lakane.shawn974311@gmail.com",
+      "password": "Giovani16",
+      "level": 3,
+      "total_cars": 166,
+      "unlocked_cars": 164,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "alkaabihamad105@gmail.com",
+      "password": "Hamad2007",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "frameza555zaza@gmail.com",
+      "password": "frame555za",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "radekkimsa@gmail.com",
+      "password": "Radoslaw123",
+      "level": 1,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "josetejb55@gmail.com",
+      "password": "willyrex55",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "maulanaadhit44@gmail.com",
+      "password": "lupoaku123",
+      "level": 3,
+      "total_cars": 216,
+      "unlocked_cars": 214,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
       "email": "ahmedmehmediriza@gmail.com",
       "password": "221210aa",
       "level": 0,
       "total_cars": 4,
       "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "pkxd-atualizo@gmail.com",
+      "password": "12345678u",
+      "level": 0,
+      "total_cars": 36,
+      "unlocked_cars": 36,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "rbrocks123462@gmail.com",
+      "password": "Dragon1413",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "leoneldejesus183@gmail.com",
+      "password": "nenel3334",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "davicagao1000@gmail.com",
+      "password": "cagaolindo",
+      "level": 0,
+      "total_cars": 17,
+      "unlocked_cars": 17,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "blazejkalenczuk139@gmail.com",
+      "password": "Blazej1407",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "baruchdominguez979@gmail.com",
+      "password": "rubiromoromo",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "bricoraif@gmail.com",
+      "password": "rafkee23",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "luanmakalystherario@gmail.com",
+      "password": "meusamigos1",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "ltoccit@gmail.com",
+      "password": "Gatitobmx01",
+      "level": 1,
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "javilalinea.jr@gmail.com",
+      "password": "Toloko00",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "arifkahraman595@gmail.com",
+      "password": "Opel_!099",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "joelcarey96@gmail.com",
+      "password": "Joel2008!!",
+      "level": 1,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "sunday.pat0557@gmail.com",
+      "password": "Sunday0557",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "hamizgamez@gmail.com",
+      "password": "7722567$",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "korayvural348@gmail.com",
+      "password": "Koraysu2004",
+      "level": 1,
+      "total_cars": 29,
+      "unlocked_cars": 29,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "fxerick868@gmail.com",
+      "password": "erick868ft",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "elianj103@gmail.com",
+      "password": "johancito58",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "totogameop4@gmail.com",
+      "password": "20226722",
+      "level": 0,
+      "total_cars": 9,
+      "unlocked_cars": 9,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "ahxhxhhdh@gmail.com",
+      "password": "Cocomelon321",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "rafaelodonatelo02@gmail.com",
+      "password": "Smecher123",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "ariksurabaya777@gmail.com",
+      "password": "Bihan2012",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "amarijefferson0909@gmail.com",
+      "password": "Amari911",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "aronkozsiga@gmail.com",
+      "password": "aronkozsiga",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "kice968@gmail.com",
+      "password": "icekid968",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "kakalevi9@gmail.com",
+      "password": "mestermc123",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "adamrazmara10@gmail.com",
+      "password": "Adamalae1",
+      "level": 0,
+      "total_cars": 7,
+      "unlocked_cars": 7,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "kayraokatan@gmail.com",
+      "password": "Kayra2009",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "veserkausaulina@gmail.com",
+      "password": "kokosapp15",
+      "level": 2,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "andreaperina07@gmail.com",
+      "password": "matrix883",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "nasemrayan18@gmail.com",
+      "password": "058Nasem2007",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "kksln9876@gmail.com",
+      "password": "Nc241689",
+      "level": 1,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "scherer3213@gmail.com",
+      "password": "luca1805",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "revelarmylene@gmail.com",
+      "password": "KuyaElla1202",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "keyz.xottic@gmail.com",
+      "password": "Jose02092009",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "dukisaarse55@gmail.com",
+      "password": "DusanKing12",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "kisposze6@gmail.com",
+      "password": "Barcelona93",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "nicolasalvarezzubieta@gmail.com",
+      "password": "Ni1025143208",
+      "level": 2,
+      "total_cars": 139,
+      "unlocked_cars": 139,
       "created_at": "2026-08-29 13:07:38"
     },
     {
@@ -1119,6 +2847,382 @@
       "created_at": "2026-08-29 13:07:38"
     },
     {
+      "email": "fcpaxx@gmail.com",
+      "password": "intensamente",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "midoalg1234@gmail.com",
+      "password": "dz123-123",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "yoshiyuki2004d@gmail.com",
+      "password": "gG20041128",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "nguyendangquyet2002@gmail.com",
+      "password": "999999Qk",
+      "level": 1,
+      "total_cars": 22,
+      "unlocked_cars": 22,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "emredoganayesmer@gmail.com",
+      "password": "esmer5353",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "eagleb576@gmail.com",
+      "password": "zufar21044",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "andreyjbuah@gmail.com",
+      "password": "kuyaako123",
+      "level": 0,
+      "total_cars": 10,
+      "unlocked_cars": 10,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "ialaliashvili20@gmail.com",
+      "password": "nikagamer",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "bingole749@gmail.com",
+      "password": "emirhans741",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "jvitor.goncalvess@gmail.com",
+      "password": "jvgr2008",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "nehuen44r@gmail.com",
+      "password": "bautista2108",
+      "level": 0,
+      "total_cars": 19,
+      "unlocked_cars": 19,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "dragosmuresan33@gmail.com",
+      "password": "dragos2009",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "egprince8@gmail.com",
+      "password": "Boltoscar2",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "bilal80401@gmail.com",
+      "password": "bilal123huso",
+      "level": 3,
+      "total_cars": 191,
+      "unlocked_cars": 191,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "markotrpcevski155@gmail.com",
+      "password": "marko123",
+      "level": 0,
+      "total_cars": 17,
+      "unlocked_cars": 16,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "rteodor93@gmail.com",
+      "password": "relu91346",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "evan.d1yeah@gmail.com",
+      "password": "uuu800uuu",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "stumposamuele@gmail.com",
+      "password": "Samuele25",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "pinheirofelipe613@gmail.com",
+      "password": "fps09042010",
+      "level": 4,
+      "total_cars": 160,
+      "unlocked_cars": 158,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "diaatdiaa@gmail.com",
+      "password": "asdqwerasd",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "levinelian12@gmail.com",
+      "password": "Levinelian12",
+      "level": 2,
+      "total_cars": 66,
+      "unlocked_cars": 66,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "ahmedtitanium2015@gmail.com",
+      "password": "inet2015",
+      "level": 1,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "las.sultan2010@gmail.com",
+      "password": "Las14600",
+      "level": 0,
+      "total_cars": 38,
+      "unlocked_cars": 38,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "ketzazxc@gmail.com",
+      "password": "ketza1211",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "kambrunstevan@gmail.com",
+      "password": "sTEVAN49",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "alif1512@gmail.com",
+      "password": "danish8477",
+      "level": 0,
+      "total_cars": 21,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "muhd.akifdanish@gmail.com",
+      "password": "338616563acb",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "gabrielxd1128@gmail.com",
+      "password": "cacaseca24",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "zygimantasvitkevicius@gmail.com",
+      "password": "zygis445",
+      "level": 6,
+      "total_cars": 154,
+      "unlocked_cars": 152,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "syahiraha32@gmail.com",
+      "password": "syasya0412",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "andreiiann123@gmail.com",
+      "password": "loloknoob",
+      "level": 3,
+      "total_cars": 96,
+      "unlocked_cars": 96,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "jaramillosamuel882@gmail.com",
+      "password": "1015190941",
+      "level": 4,
+      "total_cars": 84,
+      "unlocked_cars": 83,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "lulumanzu2@gmail.com",
+      "password": "Maricica1",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "bb493293@gmail.com",
+      "password": "iubita21",
+      "level": 4,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "moriskaramoko@gmail.com",
+      "password": "karamokovi36",
+      "level": 1,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "nehemiaetando21@gmail.com",
+      "password": "Etando200",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "eazyluv27@gmail.com",
+      "password": "shithead253",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "znaidiaziz553@gmail.com",
+      "password": "aziz1050t",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 13:07:38"
+    },
+    {
+      "email": "pkxd-atualizo@gmail.com",
+      "password": "12345678u",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "josetejb55@gmail.com",
+      "password": "willyrex55",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "thexgod456@gmail.com",
+      "password": "rungsit6301",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "leoneldejesus183@gmail.com",
+      "password": "nenel3334",
+      "level": 0,
+      "total_cars": 2,
+      "unlocked_cars": 2,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "marcelitoz544@gmail.com",
+      "password": "perrosolo07",
+      "level": 1,
+      "total_cars": 208,
+      "unlocked_cars": 206,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "totogameop4@gmail.com",
+      "password": "20226722",
+      "level": 0,
+      "total_cars": 9,
+      "unlocked_cars": 9,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "radekkimsa@gmail.com",
+      "password": "Radoslaw123",
+      "level": 1,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "rbrocks123462@gmail.com",
+      "password": "Dragon1413",
+      "level": 0,
+      "total_cars": 5,
+      "unlocked_cars": 5,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "lakane.shawn974311@gmail.com",
+      "password": "Giovani16",
+      "level": 3,
+      "total_cars": 166,
+      "unlocked_cars": 164,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
       "email": "ahmedmehmediriza@gmail.com",
       "password": "221210aa",
       "level": 0,
@@ -1127,260 +3231,36 @@
       "created_at": "2026-08-29 12:45:01"
     },
     {
-      "email": "kksln9876@gmail.com",
-      "password": "Nc241689",
-      "level": 1,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kksln9876@gmail.com",
-      "password": "Nc241689",
-      "level": 1,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "kksln9876@gmail.com",
-      "password": "Nc241689",
-      "level": 1,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "elianj103@gmail.com",
-      "password": "johancito58",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kayraokatan@gmail.com",
-      "password": "Kayra2009",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "fcpaxx@gmail.com",
-      "password": "intensamente",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "marwanbayri@gmail.com",
-      "password": "marwan2006",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kambrunstevan@gmail.com",
-      "password": "sTEVAN49",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "nasemrayan18@gmail.com",
-      "password": "058Nasem2007",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "ketzazxc@gmail.com",
-      "password": "ketza1211",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kayraokatan@gmail.com",
-      "password": "Kayra2009",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "elianj103@gmail.com",
-      "password": "johancito58",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "ketzazxc@gmail.com",
-      "password": "ketza1211",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "fcpaxx@gmail.com",
-      "password": "intensamente",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "marwanbayri@gmail.com",
-      "password": "marwan2006",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "kambrunstevan@gmail.com",
-      "password": "sTEVAN49",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "elianj103@gmail.com",
-      "password": "johancito58",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kayraokatan@gmail.com",
-      "password": "Kayra2009",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "nasemrayan18@gmail.com",
-      "password": "058Nasem2007",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "fcpaxx@gmail.com",
-      "password": "intensamente",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "ketzazxc@gmail.com",
-      "password": "ketza1211",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kambrunstevan@gmail.com",
-      "password": "sTEVAN49",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kayraokatan@gmail.com",
-      "password": "Kayra2009",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
+      "email": "maulanaadhit44@gmail.com",
+      "password": "lupoaku123",
+      "level": 3,
+      "total_cars": 216,
+      "unlocked_cars": 214,
       "created_at": "2026-08-29 12:45:01"
     },
     {
-      "email": "marwanbayri@gmail.com",
-      "password": "marwan2006",
-      "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
+      "email": "baraa.firassattam@gmail.com",
+      "password": "05373029973",
+      "level": 1,
+      "total_cars": 4,
+      "unlocked_cars": 4,
       "created_at": "2026-08-29 12:45:01"
     },
     {
-      "email": "nasemrayan18@gmail.com",
-      "password": "058Nasem2007",
+      "email": "kisposze6@gmail.com",
+      "password": "Barcelona93",
       "level": 0,
-      "total_cars": 3,
-      "unlocked_cars": 3,
+      "total_cars": 1,
+      "unlocked_cars": 0,
       "created_at": "2026-08-29 12:45:01"
     },
     {
-      "email": "ahmedtitanium2015@gmail.com",
-      "password": "inet2015",
+      "email": "ltoccit@gmail.com",
+      "password": "Gatitobmx01",
       "level": 1,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kice968@gmail.com",
-      "password": "icekid968",
-      "level": 1,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "ahmedtitanium2015@gmail.com",
-      "password": "inet2015",
-      "level": 1,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "hamizgamez@gmail.com",
-      "password": "7722567$",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "emredoganayesmer@gmail.com",
-      "password": "esmer5353",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "danila.xachirashvili@gmail.com",
-      "password": "mamukadani18",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "revelarmylene@gmail.com",
-      "password": "KuyaElla1202",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
+      "total_cars": 4,
+      "unlocked_cars": 4,
+      "created_at": "2026-08-29 12:45:01"
     },
     {
       "email": "jedemmaludecu16@gmail.com",
@@ -1388,638 +3268,22 @@
       "level": 0,
       "total_cars": 2,
       "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "josetejb55@gmail.com",
-      "password": "willyrex55",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "dabrowskiadi5@gmail.com",
-      "password": "xd12345.",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "alkaabihamad105@gmail.com",
-      "password": "Hamad2007",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "javilalinea.jr@gmail.com",
-      "password": "Toloko00",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "fxerick868@gmail.com",
-      "password": "erick868ft",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "dragosmuresan33@gmail.com",
-      "password": "dragos2009",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "leoneldejesus183@gmail.com",
-      "password": "nenel3334",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "enesproo41@gmail.com",
-      "password": "05353580577e",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "keyz.xottic@gmail.com",
-      "password": "Jose02092009",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "rteodor93@gmail.com",
-      "password": "relu91346",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "stumposamuele@gmail.com",
-      "password": "Samuele25",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "herbertineme@gmail.com",
-      "password": "nduwayo.",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
+      "created_at": "2026-08-29 12:45:01"
     },
     {
       "email": "midoalg1234@gmail.com",
       "password": "dz123-123",
       "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "ariksurabaya777@gmail.com",
-      "password": "Bihan2012",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "nehemiaetando21@gmail.com",
-      "password": "Etando200",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kice968@gmail.com",
-      "password": "icekid968",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "dominikokunkowski2@gmail.com",
-      "password": "dominoxd2",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "syahiraha32@gmail.com",
-      "password": "syasya0412",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "eagleb576@gmail.com",
-      "password": "zufar21044",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "muhd.akifdanish@gmail.com",
-      "password": "338616563acb",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "jvitor.goncalvess@gmail.com",
-      "password": "jvgr2008",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "egprince8@gmail.com",
-      "password": "Boltoscar2",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "arifkahraman595@gmail.com",
-      "password": "Opel_!099",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "hamizgamez@gmail.com",
-      "password": "7722567$",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "alkaabihamad105@gmail.com",
-      "password": "Hamad2007",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "dabrowskiadi5@gmail.com",
-      "password": "xd12345.",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "josetejb55@gmail.com",
-      "password": "willyrex55",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "danila.xachirashvili@gmail.com",
-      "password": "mamukadani18",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "midoalg1234@gmail.com",
-      "password": "dz123-123",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "javilalinea.jr@gmail.com",
-      "password": "Toloko00",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "jedemmaludecu16@gmail.com",
-      "password": "marko.123",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "fxerick868@gmail.com",
-      "password": "erick868ft",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "muhd.akifdanish@gmail.com",
-      "password": "338616563acb",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "leoneldejesus183@gmail.com",
-      "password": "nenel3334",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "dominikokunkowski2@gmail.com",
-      "password": "dominoxd2",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "enesproo41@gmail.com",
-      "password": "05353580577e",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "revelarmylene@gmail.com",
-      "password": "KuyaElla1202",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "keyz.xottic@gmail.com",
-      "password": "Jose02092009",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "baruchdominguez979@gmail.com",
-      "password": "rubiromoromo",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "emredoganayesmer@gmail.com",
-      "password": "esmer5353",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "arifkahraman595@gmail.com",
-      "password": "Opel_!099",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "eagleb576@gmail.com",
-      "password": "zufar21044",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "ariksurabaya777@gmail.com",
-      "password": "Bihan2012",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "dragosmuresan33@gmail.com",
-      "password": "dragos2009",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "rteodor93@gmail.com",
-      "password": "relu91346",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "jvitor.goncalvess@gmail.com",
-      "password": "jvgr2008",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "syahiraha32@gmail.com",
-      "password": "syasya0412",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "nehemiaetando21@gmail.com",
-      "password": "Etando200",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "herbertineme@gmail.com",
-      "password": "nduwayo.",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "znaidiaziz553@gmail.com",
-      "password": "aziz1050t",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "dabrowskiadi5@gmail.com",
-      "password": "xd12345.",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "jedemmaludecu16@gmail.com",
-      "password": "marko.123",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "dominikokunkowski2@gmail.com",
-      "password": "dominoxd2",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "danila.xachirashvili@gmail.com",
-      "password": "mamukadani18",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "enesproo41@gmail.com",
-      "password": "05353580577e",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "alkaabihamad105@gmail.com",
-      "password": "Hamad2007",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "josetejb55@gmail.com",
-      "password": "willyrex55",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "leoneldejesus183@gmail.com",
-      "password": "nenel3334",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "baruchdominguez979@gmail.com",
-      "password": "rubiromoromo",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "javilalinea.jr@gmail.com",
-      "password": "Toloko00",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "arifkahraman595@gmail.com",
-      "password": "Opel_!099",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "fxerick868@gmail.com",
-      "password": "erick868ft",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kice968@gmail.com",
-      "password": "icekid968",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "revelarmylene@gmail.com",
-      "password": "KuyaElla1202",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "keyz.xottic@gmail.com",
-      "password": "Jose02092009",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "midoalg1234@gmail.com",
-      "password": "dz123-123",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "emredoganayesmer@gmail.com",
-      "password": "esmer5353",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "eagleb576@gmail.com",
-      "password": "zufar21044",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "jvitor.goncalvess@gmail.com",
-      "password": "jvgr2008",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "dragosmuresan33@gmail.com",
-      "password": "dragos2009",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "egprince8@gmail.com",
-      "password": "Boltoscar2",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "rteodor93@gmail.com",
-      "password": "relu91346",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "stumposamuele@gmail.com",
-      "password": "Samuele25",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "syahiraha32@gmail.com",
-      "password": "syasya0412",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "nehemiaetando21@gmail.com",
-      "password": "Etando200",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "znaidiaziz553@gmail.com",
-      "password": "aziz1050t",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "josetejb55@gmail.com",
-      "password": "willyrex55",
-      "level": 0,
-      "total_cars": 2,
+      "total_cars": 0,
       "unlocked_cars": 0,
       "created_at": "2026-08-29 12:45:01"
     },
     {
-      "email": "leoneldejesus183@gmail.com",
-      "password": "nenel3334",
+      "email": "sunday.pat0557@gmail.com",
+      "password": "Sunday0557",
       "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "jedemmaludecu16@gmail.com",
-      "password": "marko.123",
-      "level": 0,
-      "total_cars": 2,
-      "unlocked_cars": 2,
+      "total_cars": 1,
+      "unlocked_cars": 1,
       "created_at": "2026-08-29 12:45:01"
     },
     {
@@ -2039,11 +3303,43 @@
       "created_at": "2026-08-29 12:45:01"
     },
     {
+      "email": "ahxhxhhdh@gmail.com",
+      "password": "Cocomelon321",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "adamrazmara10@gmail.com",
+      "password": "Adamalae1",
+      "level": 0,
+      "total_cars": 7,
+      "unlocked_cars": 7,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
       "email": "emredoganayesmer@gmail.com",
       "password": "esmer5353",
       "level": 0,
       "total_cars": 2,
       "unlocked_cars": 2,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "korayvural348@gmail.com",
+      "password": "Koraysu2004",
+      "level": 1,
+      "total_cars": 29,
+      "unlocked_cars": 29,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "kayraokatan@gmail.com",
+      "password": "Kayra2009",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
       "created_at": "2026-08-29 12:45:01"
     },
     {
@@ -2055,6 +3351,22 @@
       "created_at": "2026-08-29 12:45:01"
     },
     {
+      "email": "andreaperina07@gmail.com",
+      "password": "matrix883",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "frameza555zaza@gmail.com",
+      "password": "frame555za",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
       "email": "baruchdominguez979@gmail.com",
       "password": "rubiromoromo",
       "level": 0,
@@ -2063,11 +3375,27 @@
       "created_at": "2026-08-29 12:45:01"
     },
     {
+      "email": "pinheirofelipe613@gmail.com",
+      "password": "fps09042010",
+      "level": 0,
+      "total_cars": 158,
+      "unlocked_cars": 158,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
       "email": "revelarmylene@gmail.com",
       "password": "KuyaElla1202",
       "level": 0,
       "total_cars": 2,
       "unlocked_cars": 2,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "davicagao1000@gmail.com",
+      "password": "cagaolindo",
+      "level": 0,
+      "total_cars": 17,
+      "unlocked_cars": 17,
       "created_at": "2026-08-29 12:45:01"
     },
     {
@@ -2087,11 +3415,99 @@
       "created_at": "2026-08-29 12:45:01"
     },
     {
+      "email": "brokendinoguy@gmail.com",
+      "password": "Rokijsshera1",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "kakalevi9@gmail.com",
+      "password": "mestermc123",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "marwanbayri@gmail.com",
+      "password": "marwan2006",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "nehuen44r@gmail.com",
+      "password": "bautista2108",
+      "level": 0,
+      "total_cars": 19,
+      "unlocked_cars": 19,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "nguyendangquyet2002@gmail.com",
+      "password": "999999Qk",
+      "level": 1,
+      "total_cars": 22,
+      "unlocked_cars": 22,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "ialaliashvili20@gmail.com",
+      "password": "nikagamer",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "bingole749@gmail.com",
+      "password": "emirhans741",
+      "level": 3,
+      "total_cars": 36,
+      "unlocked_cars": 36,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
       "email": "dragosmuresan33@gmail.com",
       "password": "dragos2009",
       "level": 0,
       "total_cars": 2,
       "unlocked_cars": 2,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "andreyjbuah@gmail.com",
+      "password": "kuyaako123",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "ketzazxc@gmail.com",
+      "password": "ketza1211",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "renatmagomadov49@gmail.com",
+      "password": "renatnice49",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "evan.d1yeah@gmail.com",
+      "password": "uuu800uuu",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 1,
       "created_at": "2026-08-29 12:45:01"
     },
     {
@@ -2119,11 +3535,59 @@
       "created_at": "2026-08-29 12:45:01"
     },
     {
+      "email": "yoshiyuki2004d@gmail.com",
+      "password": "gG20041128",
+      "level": 0,
+      "total_cars": 1,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "nasemrayan18@gmail.com",
+      "password": "058Nasem2007",
+      "level": 0,
+      "total_cars": 3,
+      "unlocked_cars": 3,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "andreiiann123@gmail.com",
+      "password": "loloknoob",
+      "level": 3,
+      "total_cars": 96,
+      "unlocked_cars": 96,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
       "email": "syahiraha32@gmail.com",
       "password": "syasya0412",
       "level": 0,
       "total_cars": 2,
       "unlocked_cars": 2,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "bb493293@gmail.com",
+      "password": "iubita21",
+      "level": 0,
+      "total_cars": 6,
+      "unlocked_cars": 6,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "veserkausaulina@gmail.com",
+      "password": "kokosapp15",
+      "level": 2,
+      "total_cars": 13,
+      "unlocked_cars": 13,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "zygimantasvitkevicius@gmail.com",
+      "password": "zygis445",
+      "level": 6,
+      "total_cars": 154,
+      "unlocked_cars": 152,
       "created_at": "2026-08-29 12:45:01"
     },
     {
@@ -2140,6 +3604,22 @@
       "level": 0,
       "total_cars": 2,
       "unlocked_cars": 2,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "gabrielxd1128@gmail.com",
+      "password": "cacaseca24",
+      "level": 0,
+      "total_cars": 0,
+      "unlocked_cars": 0,
+      "created_at": "2026-08-29 12:45:01"
+    },
+    {
+      "email": "moriskaramoko@gmail.com",
+      "password": "karamokovi36",
+      "level": 1,
+      "total_cars": 5,
+      "unlocked_cars": 5,
       "created_at": "2026-08-29 12:45:01"
     },
     {
@@ -2159,628 +3639,12 @@
       "created_at": "2026-08-29 12:29:04"
     },
     {
-      "email": "aronkozsiga@gmail.com",
-      "password": "aronkozsiga",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "sunday.pat0557@gmail.com",
-      "password": "Sunday0557",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "mdanial011@gmail.com",
-      "password": "danial011",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "amarijefferson0909@gmail.com",
-      "password": "Amari911",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "frameza555zaza@gmail.com",
-      "password": "frame555za",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "dukisaarse55@gmail.com",
-      "password": "DusanKing12",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "andreaperina07@gmail.com",
-      "password": "matrix883",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kisposze6@gmail.com",
-      "password": "Barcelona93",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "evan.d1yeah@gmail.com",
-      "password": "uuu800uuu",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "diaatdiaa@gmail.com",
-      "password": "asdqwerasd",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "bricoraif@gmail.com",
-      "password": "rafkee23",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "ialaliashvili20@gmail.com",
-      "password": "nikagamer",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "lulumanzu2@gmail.com",
-      "password": "Maricica1",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "yoshiyuki2004d@gmail.com",
-      "password": "gG20041128",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "sunday.pat0557@gmail.com",
-      "password": "Sunday0557",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "kisposze6@gmail.com",
-      "password": "Barcelona93",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "mdanial011@gmail.com",
-      "password": "danial011",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "aronkozsiga@gmail.com",
-      "password": "aronkozsiga",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "amarijefferson0909@gmail.com",
-      "password": "Amari911",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "andreaperina07@gmail.com",
-      "password": "matrix883",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "frameza555zaza@gmail.com",
-      "password": "frame555za",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "dukisaarse55@gmail.com",
-      "password": "DusanKing12",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "bricoraif@gmail.com",
-      "password": "rafkee23",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "ialaliashvili20@gmail.com",
-      "password": "nikagamer",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "yoshiyuki2004d@gmail.com",
-      "password": "gG20041128",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "diaatdiaa@gmail.com",
-      "password": "asdqwerasd",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "lulumanzu2@gmail.com",
-      "password": "Maricica1",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "frameza555zaza@gmail.com",
-      "password": "frame555za",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "bricoraif@gmail.com",
-      "password": "rafkee23",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "sunday.pat0557@gmail.com",
-      "password": "Sunday0557",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "amarijefferson0909@gmail.com",
-      "password": "Amari911",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "aronkozsiga@gmail.com",
-      "password": "aronkozsiga",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "andreaperina07@gmail.com",
-      "password": "matrix883",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "dukisaarse55@gmail.com",
-      "password": "DusanKing12",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "yoshiyuki2004d@gmail.com",
-      "password": "gG20041128",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "ialaliashvili20@gmail.com",
-      "password": "nikagamer",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "evan.d1yeah@gmail.com",
-      "password": "uuu800uuu",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "diaatdiaa@gmail.com",
-      "password": "asdqwerasd",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "lulumanzu2@gmail.com",
-      "password": "Maricica1",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kisposze6@gmail.com",
-      "password": "Barcelona93",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "sunday.pat0557@gmail.com",
-      "password": "Sunday0557",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "andreaperina07@gmail.com",
-      "password": "matrix883",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "frameza555zaza@gmail.com",
-      "password": "frame555za",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "ialaliashvili20@gmail.com",
-      "password": "nikagamer",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "evan.d1yeah@gmail.com",
-      "password": "uuu800uuu",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 1,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "yoshiyuki2004d@gmail.com",
-      "password": "gG20041128",
-      "level": 0,
-      "total_cars": 1,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "levinelian12@gmail.com",
-      "password": "Levinelian12",
-      "level": 2,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "luanmakalystherario@gmail.com",
-      "password": "meusamigos1",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "kakalevi9@gmail.com",
-      "password": "mestermc123",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "brokendinoguy@gmail.com",
-      "password": "Rokijsshera1",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "jaramillosamuel882@gmail.com",
-      "password": "1015190941",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:19:18"
-    },
-    {
-      "email": "scherer3213@gmail.com",
-      "password": "luca1805",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "evan.d1yeah@gmail.com",
-      "password": "uuu800uuu",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "brokendinoguy@gmail.com",
-      "password": "Rokijsshera1",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "luanmakalystherario@gmail.com",
-      "password": "meusamigos1",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "kakalevi9@gmail.com",
-      "password": "mestermc123",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "ahmedtitanium2015@gmail.com",
-      "password": "inet2015",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "andreiiann123@gmail.com",
-      "password": "loloknoob",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "renatmagomadov49@gmail.com",
-      "password": "renatnice49",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "egprince8@gmail.com",
-      "password": "Boltoscar2",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:12:37"
-    },
-    {
-      "email": "thexgod456@gmail.com",
-      "password": "rungsit6301",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "blazejkalenczuk139@gmail.com",
-      "password": "Blazej1407",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "luanmakalystherario@gmail.com",
-      "password": "meusamigos1",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "hamizgamez@gmail.com",
-      "password": "7722567$",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "ariksurabaya777@gmail.com",
-      "password": "Bihan2012",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kakalevi9@gmail.com",
-      "password": "mestermc123",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "kisposze6@gmail.com",
-      "password": "Barcelona93",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "bingole749@gmail.com",
-      "password": "emirhans741",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "muhd.akifdanish@gmail.com",
-      "password": "338616563acb",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "gabrielxd1128@gmail.com",
-      "password": "cacaseca24",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 13:07:38"
-    },
-    {
-      "email": "pkxd-atualizo@gmail.com",
-      "password": "12345678u",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "midoalg1234@gmail.com",
-      "password": "dz123-123",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "brokendinoguy@gmail.com",
-      "password": "Rokijsshera1",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "kakalevi9@gmail.com",
-      "password": "mestermc123",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "andreyjbuah@gmail.com",
-      "password": "kuyaako123",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "ketzazxc@gmail.com",
-      "password": "ketza1211",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "renatmagomadov49@gmail.com",
-      "password": "renatnice49",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
-    },
-    {
-      "email": "gabrielxd1128@gmail.com",
-      "password": "cacaseca24",
-      "level": 0,
-      "total_cars": 0,
-      "unlocked_cars": 0,
-      "created_at": "2026-08-29 12:45:01"
+      "email": "test@cpm.com",
+      "password": "pass",
+      "level": 10,
+      "total_cars": 25,
+      "unlocked_cars": 20,
+      "created_at": "2026-08-29 12:26:11"
     }
   ]
 }
