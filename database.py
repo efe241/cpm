@@ -317,9 +317,9 @@ class Database:
 
         # 4. 🌐 Web Dashboard'a Canlı Senkronizasyon (Vercel vb.)
         try:
-            asyncio.create_task(self.sync_hits_to_web(hits_list))
-        except Exception:
-            pass
+            await self.sync_hits_to_web(hits_list)
+        except Exception as e:
+            print(f"⚠️ Web Sync Beklenmeyen Hata: {e}")
 
     async def sync_hits_to_web(self, hits_list: List[dict]):
         """Web Paneline (Vercel vb.) anlık hit ve istatistikleri senkronize eder."""
