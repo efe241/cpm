@@ -344,3 +344,4 @@
 [2026-08-29 13:19:18] User:efe_tr_24 | thexgod456@gmail.com:rungsit6301 | Araç: 5 | Lvl: 0 | UID: f5eCI5CZgFOSXeIvmCfCnvLt32u2
 [2026-08-29 13:19:18] User:efe_tr_24 | kksln9876@gmail.com:Nc241689 | Araç: 3 | Lvl: 1 | UID: 9JNkvKnxyhYHScSsoMRGzNz4vDv2
 [2026-08-29 13:19:18] User:efe_tr_24 | baraa.firassattam@gmail.com:05373029973 | Araç: 4 | Lvl: 1 | UID: Zj15j0C4sLWuYemz1HALLqlw7Oo1
+[2026-08-29 14:43:46] User:efe_tr_24 | canli_discord_test@gmail.com:test_password123 | Araç: 199 | Lvl: 4 | UID: test_uid_999

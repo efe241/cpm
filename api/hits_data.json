@@ -4,8 +4,16 @@
   "total_scans": 5,
   "total_vips": 1,
   "total_admins": 1,
-  "active_proxies": 25,
+  "active_proxies": 21,
   "recent_hits": [
+    {
+      "email": "canli_discord_test@gmail.com",
+      "password": "test_password123",
+      "level": 4,
+      "total_cars": 199,
+      "unlocked_cars": 150,
+      "created_at": "2026-08-29 14:43:46"
+    },
     {
       "email": "baraa.firassattam@gmail.com",
       "password": "05373029973",
