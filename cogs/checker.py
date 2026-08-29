@@ -91,7 +91,16 @@ async def execute_batch_scan(
         nonlocal processed_count
         e, p = acc
         async with semaphore:
-            success, details, err_msg = await check_cpm_account(session, e, p)
+            try:
+                success, details, err_msg = await asyncio.wait_for(
+                    check_cpm_account(session, e, p),
+                    timeout=16.0
+                )
+            except asyncio.TimeoutError:
+                success, details, err_msg = False, None, "Zaman Aşımı (Timeout)"
+            except Exception as e_err:
+                success, details, err_msg = False, None, str(e_err)
+
             processed_count += 1
             if success and details:
                 valid_list.append(details)

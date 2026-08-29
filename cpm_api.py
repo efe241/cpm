@@ -50,7 +50,7 @@ async def async_http_post(
             json=payload,
             headers=default_headers,
             proxy=req_proxy,
-            timeout=aiohttp.ClientTimeout(total=timeout)
+            timeout=aiohttp.ClientTimeout(total=timeout, connect=2.5, sock_read=4.0)
         ) as resp:
             text = await resp.text()
             try:
